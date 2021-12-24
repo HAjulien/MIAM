@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pageAccueil.css">
+    <title>PageAccueil</title>
+</head>
+<body>
+    
+    <header>
+        <img src="images/clickCollect/LogoPrincipal.png" alt="Logo Miam" width="100px">
+        <h1>Cantine MIAM</h1>
+        <img src="images/monProfil.png" alt="Mon Profil" width="40px">
+     </header>
+
+     <div class="container">
+
+        <input type="radio" name="image" id="i1" checked>
+        <input type="radio" name="image" id="i2" >
+        <input type="radio" name="image" id="i3" >
+
+		<div class="slide_img" id="one">
+
+			  <label for="i3" class="pre"></label>
+			  <label for="i2" class="nxt"></label>
+		</div>
+
+        <div class="slide_img" id="two">
+
+			 <label for="i1" class="pre"></label>
+			 <label for="i3" class="nxt"></label>
+		</div>
+
+        <div class="slide_img" id="three">
+
+			  <label for="i2" class="pre"></label>
+			  <label for="i1" class="nxt"></label>
+        </div>
+		<div class="nav">
+		     <label class="dots" id="dot1" for="i1" ></label>
+		     <label class="dots" id="dot2" for="i2" ></label>
+             <label class="dots" id="dot3" for="i3" ></label>
+		</div>	
+	</div>
+    <main>
+        <article>
+            <p class="para1">
+                <img src="images/couverts.png" alt="couverts" width="60px" height="60px" class="fourchette">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
+            </p>
+            <div class="colonne">
+                <div class="images">
+                    <img src="images/epices.jpg" alt="epices" width="140px" >
+                    <img src="images/legumes.jpg" alt="legumes" width="140px" >
+                    <img src="images/fruitsSecs.jpg" alt="fruits secs" width="140px" >
+                </div>
+                <p class="para2">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate Excepteur sint occaecat cupidatat non proident,</p>
+            </div>
+            <p class="para3">
+                <img src="images/burger.jpg" alt="hamburger et frites" width="160px" class="burger">
+                lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+            </p>
+        </article>
+    </main>
+</body>
+<nav id="nav">
+    <ul class="tapbar">
+        <li> <img src="images/menu.png" alt="menu" width="40px" ></li>
+        <li> <img src="images/clickCollect.png" alt="click and collect" width="40px" ></li>
+        <li></li>
+        <li> <img src="images/coffee.png" alt="café" width="40px"></li>
+        <li> <img src="images/email.png" alt="mail" width="40px"></li>
+    </ul>
+</nav>
+<footer>
+    <ul class="reseauxSociaux">
+        <span class="nousSuivre"> nous suivre sur :</span>
+        <li class="icone"> <img src="images/facebook.png" alt="facebook" width="25"> </li>
+        <li class="icone"> <img src="images/instagram.png" alt="instagram" width="25"> </li>
+        <li class="icone"> <img src="images/twitter.png" alt="twitter" width="25"> </li>
+    </ul>
+    <span class="copyright">CANTINE MIAM tous droits réservés, 2022</span>
+</footer>
+</html>
