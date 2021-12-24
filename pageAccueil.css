@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Sanchez&family=Satisfy&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Sanchez', serif, sans-serif;
+    font-size: 1.1rem;
+    color: #534F56;
+    list-style: none;
+    text-indent: 15px;
+}
+
+body{
+    background-color: #CDA673;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+
+header{
+    border-bottom: 2px solid #534F56;
+    display: flex;
+    justify-content:space-between;
+    padding: 4px;
+    align-items: center;
+    height: 8vh;
+}
+
+h1{
+    font-size: 2rem;
+    font-family: 'Satisfy', cursive, sans-serif;
+}
+
+.container{
+    width: 100vw;
+    height: 90.5vh;
+
+}
+
+.slide_img{
+	position: absolute;
+	width: 100vw;
+	height: 90.5vh;
+
+}
+
+#one{
+    background-image: url(images/chefDellore.jpg);
+    background-size: cover;
+    background-position: center;
+    
+
+}
+#two{
+    background-image: url(images/accueil2.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+#three{
+    background-image: url(images/accueil3.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+#i1, #i2, #i3{
+	display: none;
+}
+
+.pre, .nxt{
+	width: 45%;
+	height: 100%;
+	position: absolute;
+	top:0;
+	background: rgba(88,88,88,.0);
+
+}
+
+.pre{
+	left: 0px;
+}
+
+.nxt{
+	right: 0px;
+}
+
+.nav{
+	width: 100%;
+	height: 11px;
+	bottom: 12%;
+	position: absolute;
+	text-align: center;
+	z-index: 1;
+}
+
+.dots{
+	top: -10px;
+	width: 14px;
+	height: 14px;
+    margin-left: 14px;
+	position: relative;
+	border-radius: 50%;
+	display: inline-block;
+	background: rgba(0,0,0);
+    
+}
+
+.slide_img{
+	z-index: -1;
+
+}
+
+#i1:checked ~ #one,
+#i2:checked ~ #two,
+#i3:checked ~ #three{
+	z-index: 1;
+
+}
+
+#i1:checked ~ .nav #dot1,
+#i2:checked ~ .nav #dot2,
+#i3:checked ~ .nav #dot3{
+	background:#fff;
+}
+
+main{
+    margin: 5px;
+    padding: 5px;
+}
+
+.fourchette{
+    padding-right: 20px;
+    padding-top: 5px;
+}
+.para1{
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 10px;
+    margin-top:  5px;
+}
+
+.colonne{
+    display: grid;
+    grid-template:1fr/ 0.3fr 0.7fr ;
+    
+}
+.para2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.images{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.para3{
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+    padding: 5px;
+}
+
+#nav{
+    position: sticky;
+    width: 90vw;
+    bottom: 2vh;
+    left: 5vw;
+    z-index: 10;
+}
+.tapbar{
+    background: #EAD8C0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    margin: 2%;
+    height: 50px;
+    border-radius: 15px;
+}
+
+footer{
+    background-color: #534F56;
+    height: 10vh;
+    
+}
+.nousSuivre{
+    background-color: #534F56;
+    color: #F8F8F8;
+    font-size: 0.8rem;
+}
+.reseauxSociaux{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: #534F56;
+}
+.icone{
+    padding: 2vw;
+    background-color: #534F56;
+}
+.copyright{
+    display: flex;
+    justify-content: center;
+    background-color: #534F56;
+    color: #F8F8F8;
+    font-size: 0.7rem;
+    padding-bottom: 1.5vh;
+
+}
