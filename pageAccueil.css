@@ -86,7 +86,7 @@ h1{
 	right: 0px;
 }
 
-.nav{
+.dots{
 	width: 100%;
 	height: 11px;
 	bottom: 12%;
@@ -95,7 +95,7 @@ h1{
 	z-index: 1;
 }
 
-.dots{
+.dot{
 	top: -10px;
 	width: 14px;
 	height: 14px;
@@ -167,7 +167,7 @@ main{
     padding: 5px;
 }
 
-#nav{
+#menu{
     position: sticky;
     width: 90vw;
     bottom: 2vh;
