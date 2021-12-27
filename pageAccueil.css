@@ -270,13 +270,13 @@ main{
 .open-nav .bar::after{
     transform: rotate(-45deg);
 }
+
 footer{
     background-color: #534F56;
     height: 10vh;
     
 }
 .nousSuivre{
-    background-color: #534F56;
     color: #F8F8F8;
     font-size: 0.8rem;
 }
@@ -284,18 +284,17 @@ footer{
     display: flex;
     justify-content:center;
     align-items: center;
-    background-color: #534F56;
 }
 .icone{
-    padding: 2vw;
-    background-color: #534F56;
+    padding: 12px;
 }
+
 .copyright{
     display: flex;
     justify-content: center;
     background-color: #534F56;
     color: #F8F8F8;
-    font-size: 0.7rem;
-    padding-bottom: 1.5vh;
+    font-size: 0.8rem;
+    padding-bottom: 15px;
 
 }
