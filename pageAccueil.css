@@ -184,6 +184,67 @@ main{
     border-radius: 15px;
 }
 
+.hamburger{
+    position: relative;
+    width: 45px;
+    height: 45px;
+    padding-top: 40px;
+    border: none;
+    border-radius: 50%;
+    background-color: #534F56;
+    cursor: pointer;
+
+}
+
+.bar{
+    display: block;
+    position: absolute;
+    background-color: #CDA673;
+    width: 30px;
+    height: 3px;
+    margin-top: -22px;
+    margin-left: 7px;
+    border-radius: 5px;
+}
+
+.bar::before{
+    content: "";
+    display: block;
+    position: absolute;
+    background: #CDA673;
+    width: 30px;
+    height: 3px;
+    margin-top: -10px;
+    border-radius: 5px;
+}
+
+.bar::after{
+    content: "";
+    display: block;
+    position: absolute;
+    background: #CDA673;
+    width: 30px;
+    height: 3px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 footer{
     background-color: #534F56;
     height: 10vh;
