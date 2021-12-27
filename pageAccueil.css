@@ -46,7 +46,7 @@ h1{
 }
 
 #one{
-    background-image: url(images/chefDellore.jpg);
+    background-image: url(images/accueil1.jpg);
     background-size: cover;
     background-position: center;
     
@@ -119,9 +119,9 @@ h1{
 
 }
 
-#i1:checked ~ .nav #dot1,
-#i2:checked ~ .nav #dot2,
-#i3:checked ~ .nav #dot3{
+#i1:checked ~ .dots #dot1,
+#i2:checked ~ .dots #dot2,
+#i3:checked ~ .dots #dot3{
 	background:#fff;
 }
 
