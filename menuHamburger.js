@@ -1,7 +1,7 @@
 function toggleMenu () {
     const navbar = document.querySelector('.navbar');
-    const burger = document.querySelector('.hamburger');
-    burger.addEventListener('click', (e) => {
+    const hamburger = document.querySelector('.hamburger');
+    hamburger.addEventListener('click', (e) => {
     navbar.classList.toggle('open-nav');
     })
 }

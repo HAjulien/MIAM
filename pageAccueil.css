@@ -224,22 +224,6 @@ main{
     transform: translateY(12px);
 }
 
-.open-nav .navbar__links{
-    height: 100%;
-}
-
-.open-nav .bar{
-    width: 0px;
-}
-
-.open-nav .bar::before{
-    transform: rotate(45deg);
-}
-.open-nav .bar::after{
-    transform: rotate(-45deg);
-}
-
-
 .navbar__links{
     display: flex;
     flex-direction: column;
@@ -264,7 +248,7 @@ main{
     display: block;
     padding: 1rem;
     font-size: 1.3rem;
-    transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out ;
 }
 
 .navbar__link > a:hover {
@@ -272,32 +256,20 @@ main{
     letter-spacing: 3px;
 }
 
+.open-nav .navbar__links{
+    height: 100%;
+}
 
+.open-nav .bar{
+    width: 0px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.open-nav .bar::before{
+    transform: rotate(45deg);
+}
+.open-nav .bar::after{
+    transform: rotate(-45deg);
+}
 footer{
     background-color: #534F56;
     height: 10vh;
