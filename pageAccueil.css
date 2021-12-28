@@ -14,6 +14,7 @@
 body{
     background-color: #CDA673;
 }
+
 ::-webkit-scrollbar{
     display: none;
 }
@@ -49,6 +50,7 @@ h1{
     background-image: url(images/accueil1.jpg);
     background-size: cover;
     background-position: center;
+    
     
 
 }
