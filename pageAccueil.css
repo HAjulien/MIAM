@@ -192,7 +192,6 @@ main{
     border-radius: 50%;
     background-color: #534F56;
     cursor: pointer;
-
 }
 
 .bar{
@@ -230,7 +229,7 @@ main{
     display: flex;
     flex-direction: column;
     position: fixed;
-    top: 0vh;
+    bottom: 0vh;
     width:100vw;
     height: 0vh;
     background-color: #00000099;
