@@ -149,8 +149,7 @@ main{
 }
 .para2{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-left: 10px;
 
 }
 .images{
@@ -284,9 +283,12 @@ footer{
     display: flex;
     justify-content:center;
     align-items: center;
+    background-color: #534F56;
+
 }
 .icone{
     padding: 12px;
+
 }
 
 .copyright{
