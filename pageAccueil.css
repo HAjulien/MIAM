@@ -227,8 +227,8 @@ main{
     display: flex;
     flex-direction: column;
     position: fixed;
-    top: 0%;
-    width:100%;
+    top: 0vh;
+    width:100vw;
     height: 0vh;
     background-color: #00000099;
     transition: all .8s ease-in-out;
@@ -259,14 +259,14 @@ main{
     height: 100%;
 }
 
-.open-nav .bar{
+open-nav .bar{
     width: 0px;
 }
 
-.open-nav .bar::before{
+open-nav .bar::before{
     transform: rotate(45deg);
 }
-.open-nav .bar::after{
+open-nav .bar::after{
     transform: rotate(-45deg);
 }
 
