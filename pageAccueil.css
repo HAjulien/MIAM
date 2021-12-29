@@ -277,18 +277,20 @@ main{
 
 footer{
     background-color: #534F56;
-    height: 10vh;
+    height: 15vh;
     
 }
 .nousSuivre{
     color: #F8F8F8;
-    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    font-size: 1rem;
 }
 .reseauxSociaux{
     display: flex;
     justify-content:center;
     align-items: center;
-    background-color: #534F56;
 
 }
 .icone{
