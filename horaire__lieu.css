@@ -32,9 +32,34 @@ h1{
     font-family: 'Satisfy', cursive, sans-serif;
 }
 
+caption{
+    position: absolute;
+    margin-top: -50px;
+    text-decoration: underline;
+    font-size: 1.3rem;
+}
+
+table{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+th{
+    text-decoration: underline;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1.1rem;
+}
 
 
 
+.vendredi{
+    padding-left: 25%;
+
+}
 
 
 
