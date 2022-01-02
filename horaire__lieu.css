@@ -4,7 +4,7 @@
     margin: 0px;
     padding: 0px;
     font-family: 'Sanchez', serif, sans-serif;
-    font-size: 1.1rem;
+    font-size: clamp(10px, 1rem, 20px) ;
     color: #534F56;
     list-style: none;
 }
@@ -65,7 +65,7 @@ td{
     display: grid;
     height: 320px;
     width: 100vw;
-    grid-template-columns: 55% 45%;
+    grid-template-columns: 220px 1fr;
     grid-template-rows: 60px 1fr;
 }
 
@@ -85,6 +85,7 @@ div{
     justify-content: center;
     align-items: center;
     margin-left: 5px;
+
     
 }
 
@@ -119,6 +120,8 @@ span{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
 }
 
 #call{
