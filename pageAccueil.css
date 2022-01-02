@@ -130,6 +130,7 @@ h1{
 main{
     margin: 5px;
     padding: 5px;
+    columns: 350px;
 }
 
 .fourchette{
@@ -145,21 +146,21 @@ main{
 }
 
 .colonne{
-    display: grid;
-    grid-template:1fr/ 0.3fr 0.7fr ;
+    display: flex;
     
 }
 .para2{
-    display: flex;
     margin-left: 10px;
 
 }
 .images{
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
+
+#epice{
+    display: flex;
+}
+
 .para3{
     margin-top: 5px;
     display: flex;
