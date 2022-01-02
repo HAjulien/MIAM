@@ -29,7 +29,7 @@ header{
 
 h1{
     font-size: clamp(10px, 2em, 27px) ;
-    font-family: 'Satisfy', cursive, sans-serif;
+    font-family: 'Satisfy', sans-serif;
 }
 
 h2{
