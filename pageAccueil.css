@@ -151,10 +151,11 @@ main{
 }
 .para2{
     margin-left: 10px;
-
+    
 }
 .images{
     flex-direction: column;
+    font-size: 0;
 }
 
 #epice{
