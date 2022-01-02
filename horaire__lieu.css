@@ -27,8 +27,8 @@ header{
 }
 
 h1{
-    font-size: 2.7rem;
-    font-family: 'Satisfy', cursive, sans-serif;
+    font-size: clamp(10px, 2em, 27px) ;
+    font-family: 'Satisfy', sans-serif;
 }
 
 caption{
@@ -85,6 +85,7 @@ div{
     justify-content: center;
     align-items: center;
     margin-left: 5px;
+    
 }
 
 article{
