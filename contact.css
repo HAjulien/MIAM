@@ -4,13 +4,14 @@
     margin: 0px;
     padding: 0px;
     font-family: 'Sanchez', serif, sans-serif;
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #534F56;
     list-style: none;
 }
 
 body{
     background-color: #CDA673;
+    width: 100vw;
 }
 
 ::-webkit-scrollbar{
@@ -27,7 +28,7 @@ header{
 }
 
 h1{
-    font-size: 2.7rem;
+    font-size: clamp(10px, 2em, 27px) ;
     font-family: 'Satisfy', cursive, sans-serif;
 }
 
@@ -83,8 +84,9 @@ h3{
 form{
     display: block;
     text-align: center;
-    height: 550px;
-    width: 390px;
+    min-height: 550px;
+    max-width: 390px;
+    width: 70vw;
     border: 2px solid black;
     background-color: #f8F8F8;
 }
@@ -95,7 +97,8 @@ form div{
 }
 
 label{
-    width: 130px;
+    max-width: 130px;
+    width: 20vw;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -113,7 +116,8 @@ label{
 
 .button{
     height: 40px;
-    width: 100px;
+    max-width: 100px;
+    width: 23vw;
     margin: 5px 20px;
     color: #F8F8F8;
 }
@@ -122,6 +126,7 @@ input{
     border-radius: 13px;
     border: 3px solid #18830F;
     padding-left: 15px;
+    width: 35vw;
 
 }
 
