@@ -89,13 +89,17 @@ form div{
     padding: 8px;
 }
 
+#nom{
+    margin-top: 15px;
+}
+
 label{
     max-width: 130px;
-    width: 21vw;
+    width: 27vw;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding-right: 20px;
+    padding-right: 10px;
 }
 
 #avis{
@@ -118,8 +122,8 @@ label{
 input{
     border-radius: 13px;
     border: 3px solid #18830F;
-    padding-left: 15px;
-    width: 55vw;
+    padding-left: 10px;
+    width: 50vw;
 
 }
 
