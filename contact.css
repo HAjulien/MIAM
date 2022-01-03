@@ -8,7 +8,6 @@
     color: #534F56;
     list-style: none;
 }
-
 body{
     background-color: #CDA673;
 }
@@ -36,6 +35,9 @@ header{
     display: flex;
     align-items: center;
     font-size: 0.6rem;
+    text-decoration: none;
+    text-indent: 15px;
+
 }
 
 a img{
