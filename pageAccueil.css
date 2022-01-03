@@ -23,23 +23,30 @@ header{
     border-bottom: 2px solid #534F56;
     display: flex;
     justify-content:space-between;
-    padding: 4px;
+    padding: 0px 15px;
     align-items: center;
     height: 8vh;
 }
 
+#profil{
+    background-color: #fff;
+}
+
 h1{
-    width: 100vw;
+    width: 80vw;
     height: 10vh;
-    font-size: 2.5rem ;
+    font-size: 2rem ;
     letter-spacing: 2px;
-    padding-top: 20px;
+    margin-left: 10vw;
+    bottom: 59vh;
     text-align: center;
     font-family: 'Satisfy', sans-serif;
     position: absolute;
-    bottom: 59vh;
-    color: #534F56;
-    background-color: #cda673d8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #534f56b2;
+    color: #cda673d8;
 
 
 }
@@ -57,7 +64,7 @@ h1{
 }
 
 #one{
-    background-image: url(images/accueil1.jpg);
+    background-image: url(images/accueil3.jpg);
     background-size: cover;
     background-position: center;
     
@@ -72,7 +79,7 @@ h1{
 }
 
 #three{
-    background-image: url(images/accueil3.jpg);
+    background-image: url(images/accueil1.jpg);
     background-size: cover;
     background-position: center;
 
@@ -139,12 +146,11 @@ h1{
 
 main{
     margin: 5px;
-    padding: 5px;
     columns: 370px;
 }
 
 .fourchette{
-    padding-right: 20px;
+    padding-right: 10px;
     padding-top: 5px;
 }
 .para1{
@@ -155,30 +161,21 @@ main{
     margin-top:  5px;
 }
 
-.colonne{
-    display: flex;
-    
-}
-.para2{
-    margin-left: 10px;
-    
-}
+
 .images{
-    flex-direction: column;
-    font-size: 0;
-    max-height: 270px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
-#epice{
-    display: flex;
-}
 
 .para3{
-    margin-top: 5px;
+    margin-top: 15px;
     display: flex;
     justify-content: flex-end;
     flex-direction: row-reverse;
-    padding: 5px;
+    padding-right: 5px;
 }
 
 #menu{
