@@ -21,14 +21,25 @@ header{
     border-bottom: 2px solid #534F56;
     display: flex;
     justify-content:space-between;
-    padding: 4px;
+    padding: 0px 10px;
     align-items: center;
     height: 8vh;
 }
 
-h1{
-    font-size: clamp(10px, 2em, 27px) ;
-    font-family: 'Satisfy', sans-serif;
+#profil{
+    background-color: #534F56;
+    border-radius: 30px;
+}
+
+#profil a{
+    color: #CDA673;
+    display: flex;
+    align-items: center;
+    font-size: 0.6rem;
+}
+
+a img{
+    padding-left: 3px;
 }
 
 h2{
