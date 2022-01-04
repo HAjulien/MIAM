@@ -114,6 +114,7 @@ h2{
     align-items: center;
     justify-content: center;
     text-decoration: underline;
+    padding-right: 10px;
 }
 span{
     color: green;
