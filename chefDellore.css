@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Sanchez&family=Satisfy&display=swap');
+
+
 *{
     margin: 0px;
     padding: 0px;
@@ -44,9 +47,25 @@ a img{
 
 article img{
     width: 100vw;
+    margin: 0px 0px 15px 0px;
 }
 
+h1{
+    font-family: "Satisfy", sans-serif;
+    text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
 
+p{
+    text-indent: 35px;
+    margin: 0px 10px 10px 10px;
+    text-align: justify;
+}
+
+p:last-child{
+    margin-bottom: 20px;
+}
 
 
 
