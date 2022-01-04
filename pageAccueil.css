@@ -1,26 +1,4 @@
-<<<<<<< HEAD
-@import url('https://fonts.googleapis.com/css2?family=Sanchez&display=swap');
 
-
-*{
-    margin: 5px;
-    padding: 0px;
-    font-family: 'Sanchez', serif;
-    font-size: 1.1rem;
-    color: #534F56;
-    background: #CDA673;
-}
-
-.Q{
-    display: flex;
-    flex-direction: column;
-}
-
-.para{
-    
-
-}    
-=======
 @import url('https://fonts.googleapis.com/css2?family=Sanchez&family=Satisfy&display=swap');
 
 
