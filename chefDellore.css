@@ -42,6 +42,9 @@ a img{
     padding-left: 3px;
 }
 
+article img{
+    width: 100vw;
+}
 
 
 
