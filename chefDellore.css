@@ -114,8 +114,8 @@ p:last-child{
 
 #menu{
     position: sticky;
+    top: 5%;
     width: 90vw;
-    bottom: 2vh;
     left: 5vw;
     z-index: 10;
 }

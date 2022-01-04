@@ -53,7 +53,7 @@ h1{
     font-size: 2rem ;
     letter-spacing: 2px;
     margin-left: 10vw;
-    bottom: 62vh;
+    bottom: 52vh;
     text-align: center;
     font-family: 'Satisfy', sans-serif;
     position: absolute;
@@ -193,8 +193,8 @@ main{
 
 #menu{
     position: sticky;
+    top: 5%;
     width: 90vw;
-    bottom: 2vh;
     left: 5vw;
     z-index: 10;
 }
