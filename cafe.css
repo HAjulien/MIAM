@@ -1,16 +1,12 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Sanchez&family=Satisfy&display=swap');
-
 
 *{
     margin: 0px;
     padding: 0px;
     font-family: 'Sanchez', serif, sans-serif;
-    font-size: 1rem;
+    font-size: clamp(10px, 1rem, 20px) ;
     color: #534F56;
     list-style: none;
-    text-indent: 15px;
-    text-decoration: none;
 }
 
 body{
@@ -40,6 +36,8 @@ header{
     display: flex;
     align-items: center;
     font-size: 0.6rem;
+    text-indent: 10px;
+    text-decoration: none;
 }
 
 a img{
@@ -47,149 +45,43 @@ a img{
 }
 
 
-h1{
-    width: 80vw;
-    height: 10vh;
-    font-size: 2rem ;
-    letter-spacing: 2px;
-    margin-left: 10vw;
-    bottom: 62vh;
-    text-align: center;
-    font-family: 'Satisfy', sans-serif;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #534f56ea;
-    color: #cda673f5;
 
 
-}
-
-.container{
-    width: 100vw;
-    height: 90.5vh;
-
-}
-
-.slide_img{
-	position: absolute;
-	width: 100vw;
-	height: 90.5vh;
-}
-
-#one{
-    background-image: url(images/accueil3.jpg);
-    background-size: cover;
-    background-position: center;
-
-}
-#two{
-    background-image: url(images/accueil2.jpg);
-    background-size: cover;
-    background-position: center;
-
-}
-
-#three{
-    background-image: url(images/accueil1.jpg);
-    background-size: cover;
-    background-position: center;
-
-}
-#i1, #i2, #i3{
-	display: none;
-}
-
-.pre, .nxt{
-	width: 45%;
-	height: 100%;
-	position: absolute;
-	top:0;
-	background: rgba(88,88,88,.0);
-
-}
-
-.pre{
-	left: 0px;
-}
-
-.nxt{
-	right: 0px;
-}
-
-.dots{
-	width: 100%;
-	height: 11px;
-	bottom: 12%;
-	position: absolute;
-	text-align: center;
-	z-index: 1;
-}
-
-.dot{
-	top: -10px;
-	width: 14px;
-	height: 14px;
-    margin-left: 14px;
-	position: relative;
-	border-radius: 50%;
-	display: inline-block;
-	background: rgba(0,0,0);
-    
-}
-
-.slide_img{
-	z-index: -1;
-
-}
-
-#i1:checked ~ #one,
-#i2:checked ~ #two,
-#i3:checked ~ #three{
-	z-index: 1;
-
-}
-
-#i1:checked ~ .dots #dot1,
-#i2:checked ~ .dots #dot2,
-#i3:checked ~ .dots #dot3{
-	background:#fff;
-}
-
-main{
-    margin: 10px;
-    columns: 370px;
-}
-
-.fourchette{
-    padding-right: 10px;
-    padding-top: 5px;
-}
-.para1{
-    margin-bottom: 15px;
-    display: flex;
-    justify-content: flex-end;
-    margin-left: 10px;
-    margin-top:  5px;
-}
 
 
-.images{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
 
 
-.para3{
-    margin-top: 15px;
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: row-reverse;
-    padding-right: 5px;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #menu{
     position: sticky;
@@ -273,7 +165,7 @@ main{
     color: #CDA673;
     display: block;
     padding: 1rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
     transition: all .4s ease-in-out ;
 }
 
@@ -328,5 +220,4 @@ footer{
     color: #F8F8F8;
     font-size: 0.8rem;
     padding-bottom: 15px;
-
 }
