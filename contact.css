@@ -138,6 +138,26 @@ input{
 }
 
 
+.contact{
+    background-color: #F8F8F8;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+    max-width: 400px;
+    width: 90vw;
+    border-radius: 15px;
+    border: 3px solid #18830F;
+}
+
+address{
+    margin-bottom: 15px;
+
+}
+
+
 
 
 
