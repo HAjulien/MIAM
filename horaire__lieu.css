@@ -172,7 +172,7 @@ span{
 
 #menu{
     position: sticky;
-    top: 5%;
+    bottom: 2%;
     width: 90vw;
     left: 5vw;
     z-index: 10;
