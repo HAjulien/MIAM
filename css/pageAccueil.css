@@ -69,11 +69,56 @@ h1{
 
 @keyframes showup {
     0% {opacity: 0;}
-    30% {opacity: 0;height:0;}
+    30% {opacity: 0;}
     100% {opacity: 1;}
    
 }
 
+
+#soustitre{
+    
+}
+#sousTitre div{
+    display: inline-block;
+    overflow: hidden;
+    color: #F8F8F8;
+    font-size: 1.8rem;   
+    margin-bottom: 5vh;
+}
+
+#slogan1{
+    animation: showup 7s ;  
+    }
+
+
+#slogan2{
+    width: 110px;
+     animation: reveal 7s; 
+}
+
+#slogan2 span{
+    font-size: 1.7rem;
+     animation: slidein 7s ; 
+    background-color: #CDA673;
+    border-radius: 20px;
+    padding:0px 10px;
+    
+}
+
+@keyframes reveal {
+    0% {opacity: 0; width: 0;}
+    50% {opacity: 0; width: 0;}
+    60% {opacity: 0; width: 75px;}
+    100% {opacity: 1; width: 110px;}
+}
+
+@keyframes slidein {
+    0%{margin-left: -500px;}
+    20%{margin-left: -500px;}
+    35%{margin-left: 0;}
+    100%{margin-left:0px;}
+    
+}  
 
 
 
@@ -93,7 +138,7 @@ h1{
 }
 
 #one{
-    background-image: url(../images/accueil3.jpg);
+    background-image: url(../images/accueil1.jpg);
     background-size: cover;
     background-position: center;
 
@@ -106,7 +151,7 @@ h1{
 }
 
 #three{
-    background-image: url(../images/accueil1.jpg);
+    background-image: url(../images/accueil3.jpg);
     background-size: cover;
     background-position: center;
 
