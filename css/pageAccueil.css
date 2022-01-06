@@ -75,9 +75,6 @@ h1{
 }
 
 
-#soustitre{
-    
-}
 #sousTitre div{
     display: inline-block;
     overflow: hidden;
@@ -119,11 +116,6 @@ h1{
     100%{margin-left:0px;}
     
 }  
-
-
-
-
-
 
 .container{
     width: 100vw;
