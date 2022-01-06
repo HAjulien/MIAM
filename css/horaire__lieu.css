@@ -89,7 +89,8 @@ span{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 10px;
+    margin-top: 20px;
+    line-height: 25px ;
 }
 
 #call{
@@ -97,6 +98,8 @@ span{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    margin: 10px 0px;
+    line-height: 30px;
 }
 
 
