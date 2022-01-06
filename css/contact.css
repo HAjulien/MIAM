@@ -1,47 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Sanchez&family=Satisfy&display=swap');
 
-*{
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Sanchez', serif, sans-serif;
-    font-size: 1rem;
-    color: #534F56;
-    list-style: none;
-}
 body{
     background-color: #CDA673;
-}
-
-::-webkit-scrollbar{
-    display: none;
-}
-
-header{
-    border-bottom: 2px solid #534F56;
-    display: flex;
-    justify-content:space-between;
-    padding: 0px 10px;
-    align-items: center;
-    height: 8vh;
-}
-
-#profil{
-    background-color: #534F56;
-    border-radius: 30px;
-}
-
-#profil a{
-    color: #F8F8F8;
-    display: flex;
-    align-items: center;
-    font-size: 0.6rem;
-    text-decoration: none;
-    text-indent: 15px;
-
-}
-
-a img{
-    padding-left: 3px;
+    color: #534F56;
 }
 
 h2{

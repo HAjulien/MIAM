@@ -1,0 +1,42 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Sanchez&family=Satisfy&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Sanchez', serif, sans-serif;
+    font-size: clamp(10px, 1rem, 20px) ;
+    list-style: none;
+    text-decoration: none;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+header{
+    border-bottom: 2px solid #534F56;
+    display: flex;
+    justify-content:space-between;
+    padding: 0px 10px;
+    align-items: center;
+    height: 9vh;
+}
+
+#profil{
+    background-color: #534F56;
+    border-radius: 30px;
+}
+
+#profil a{
+    color: #F8F8F8;
+    display: flex;
+    align-items: center;
+    font-size: 0.6rem;
+    text-indent: 15px;
+    
+}
+
+a img{
+    padding-left: 3px;
+}
