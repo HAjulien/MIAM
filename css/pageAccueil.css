@@ -79,20 +79,20 @@ h1{
 }
 
 #one{
-    background-image: url(images/accueil3.jpg);
+    background-image: url(../images/accueil3.jpg);
     background-size: cover;
     background-position: center;
 
 }
 #two{
-    background-image: url(images/accueil2.jpg);
+    background-image: url(../images/accueil2.jpg);
     background-size: cover;
     background-position: center;
 
 }
 
 #three{
-    background-image: url(images/accueil1.jpg);
+    background-image: url(../images/accueil3.jpg);
     background-size: cover;
     background-position: center;
 
@@ -165,11 +165,10 @@ main{
 .fourchette{
     padding-right: 10px;
     padding-top: 5px;
+    float: left;
 }
 .para1{
     margin-bottom: 15px;
-    display: flex;
-    justify-content: flex-end;
     margin-left: 10px;
     margin-top:  5px;
 }
