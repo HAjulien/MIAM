@@ -30,7 +30,7 @@ h1{
     display: inline-block;
     overflow: hidden;
     color: #F8F8F8;
-    font-size: 1.8rem;   
+    font-size: 1.7rem;   
     margin-bottom: 5vh;
 }
 
@@ -71,7 +71,7 @@ h1{
 
 @keyframes slidein {
     0%{margin-left: -500px;}
-    40%{margin-left: -500px;}
+    20%{margin-left: -500px;}
     45%{margin-left: 0;}
     100%{margin-left:0px;}
     
