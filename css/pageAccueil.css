@@ -62,9 +62,22 @@ h1{
     justify-content: center;
     background-color: #534f56ea;
     color: #cda673f5;
-
-
+    animation: showup 2s;
+    border-radius: 20px;
 }
+
+@keyframes showup {
+    0% {opacity: 0;}
+    30% {opacity: 0;}
+    100% {opacity: 1; height: 10vh;}
+   
+}
+
+
+
+
+
+
 
 .container{
     width: 100vw;
@@ -158,14 +171,17 @@ h1{
 }
 
 main{
-    margin: 10px;
-    columns: 370px;
+    margin: 5px;
+    display: block;
+    flex: wrap;
+    
 }
 
 .fourchette{
     padding-right: 10px;
     padding-top: 5px;
     float: left;
+    
 }
 .para1{
     margin-bottom: 15px;
@@ -176,9 +192,8 @@ main{
 
 .images{
     display: flex;
-    align-items: center;
-    justify-content: center;
-
+    overflow: auto;
+    margin: 0px -5px ;
 }
 
 
