@@ -48,6 +48,7 @@ h1{
     font-size: 1.7rem;
     animation: slidein 4s ; 
     background-color: #CDA673;
+    color: #534F56;
     border-radius: 20px;
     padding:0px 10px;
 }
