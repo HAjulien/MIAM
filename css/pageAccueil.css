@@ -2,6 +2,7 @@
 body{
     background-color: #CDA673;
     color: #534F56;
+
 }
 
 h1{
@@ -23,12 +24,6 @@ h1{
     border-radius: 20px;
 }
 
-@keyframes showup {
-    0% {opacity: 0;}
-    30% {opacity: 0;}
-    100% {opacity: 1;}
-   
-}
 
 
 #sousTitre div{
@@ -40,22 +35,30 @@ h1{
 }
 
 #slogan1{
-    animation: showup 4s ;  
-    }
+    animation: showup 3s ;  
+}
 
 
 #slogan2{
     width: 110px;
-     animation: reveal 4s; 
+    animation: reveal 4s; 
 }
 
 #slogan2 span{
     font-size: 1.7rem;
-     animation: slidein 4s ; 
+    animation: slidein 4s ; 
     background-color: #CDA673;
     border-radius: 20px;
     padding:0px 10px;
-    
+}
+
+
+
+@keyframes showup {
+    0% {opacity: 0;}
+    30% {opacity: 0;}
+    100% {opacity: 1;}
+   
 }
 
 @keyframes reveal {
@@ -72,6 +75,10 @@ h1{
     100%{margin-left:0px;}
     
 }  
+
+
+
+
 
 .container{
     width: 100vw;
