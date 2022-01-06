@@ -171,9 +171,10 @@ h1{
 }
 
 main{
-    margin: 5px;
+    margin: 10px;
     display: block;
     flex: wrap;
+    text-align: justify;
     
 }
 
@@ -184,7 +185,6 @@ main{
     
 }
 .para1{
-    margin-bottom: 15px;
     margin-left: 10px;
     margin-top:  5px;
 }
@@ -193,7 +193,7 @@ main{
 .images{
     display: flex;
     overflow: auto;
-    margin: 0px -5px ;
+    margin: 15px -10px ;
 }
 
 
@@ -202,7 +202,11 @@ main{
     display: flex;
     justify-content: flex-end;
     flex-direction: row-reverse;
-    padding-right: 5px;
+    
+}
+
+#tortilla{
+    margin-left: 5px;
 }
 
 #menu{
