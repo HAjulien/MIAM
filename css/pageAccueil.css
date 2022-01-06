@@ -84,18 +84,18 @@ h1{
 }
 
 #slogan1{
-    animation: showup 7s ;  
+    animation: showup 4s ;  
     }
 
 
 #slogan2{
     width: 110px;
-     animation: reveal 7s; 
+     animation: reveal 4s; 
 }
 
 #slogan2 span{
     font-size: 1.7rem;
-     animation: slidein 7s ; 
+     animation: slidein 4s ; 
     background-color: #CDA673;
     border-radius: 20px;
     padding:0px 10px;
@@ -104,15 +104,15 @@ h1{
 
 @keyframes reveal {
     0% {opacity: 0; width: 0;}
-    50% {opacity: 0; width: 0;}
-    60% {opacity: 0; width: 75px;}
+    30% {opacity: 0; width: 0;}
+    50% {opacity: 0; width: 75px;}
     100% {opacity: 1; width: 110px;}
 }
 
 @keyframes slidein {
     0%{margin-left: -500px;}
-    20%{margin-left: -500px;}
-    35%{margin-left: 0;}
+    40%{margin-left: -500px;}
+    45%{margin-left: 0;}
     100%{margin-left:0px;}
     
 }  
@@ -130,13 +130,13 @@ h1{
 }
 
 #one{
-    background-image: url(../images/accueil1.jpg);
+    background-image: url(../images/accueil2.jpg);
     background-size: cover;
     background-position: center;
 
 }
 #two{
-    background-image: url(../images/accueil2.jpg);
+    background-image: url(../images/accueil1.jpg);
     background-size: cover;
     background-position: center;
 
