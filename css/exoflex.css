@@ -38,26 +38,26 @@ li{
     margin-left: 50px;
 }
 
-article div{
+section article{
     background: #9085A5;
     display: inline-block;
     margin-left: 6%;
     margin-top: 10px;
 }
 
-#div1 {
+#article1 {
     width: 50vw;
     height: 60vh;
 }
-#div1 p{
+#article1 p{
 color: black;
 }
-#div2{
+#article2{
     width: 37vw;
     height: 60vh;
     margin-left: 1px;
 }
-#div2 p{
+#article2 p{
 color: #9085A5;
 }
 
