@@ -138,13 +138,14 @@ h1{
     animation: reveal 5s; 
 }
 
-#unique{
+
+#unique a{
     font-size: 1.7rem;
     border-radius: 20px;
     padding:0px 10px;
     background-color: #CDA673;
     color: #534F56;
-    animation: slidein 5s; 
+    animation: slidein 5s;     
 }
 
 /* animation slogan */
@@ -224,6 +225,22 @@ h1{
     text-indent: 15px;
 }
 
+#bienvenue{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: italic normal bold 1.5rem 'Satisfy';
+
+}
+
+h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:15px;
+    text-decoration: underline;
+}
+
 .fork{
     float: left; 
     padding-right: 10px;
@@ -237,13 +254,6 @@ h1{
     margin-top:  5px;
 }
 
-h3{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top:15px;
-    text-decoration: underline;
-}
 .friseImages{
     display: flex;
     position: relative;
@@ -363,7 +373,7 @@ h3{
     align-items: center;
 }
 
-.navbar__link > a{
+.navbar__link a{
     display: block;
     text-decoration: none;
     padding: 1rem;
@@ -372,7 +382,7 @@ h3{
     transition: all .4s ease-in-out ;
 }
 
-.navbar__link > a:hover {
+.navbar__link a:hover {
     display: block;
     letter-spacing: 2px;
 }
