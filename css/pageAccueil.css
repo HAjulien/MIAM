@@ -369,8 +369,11 @@ h3{
 
 .navbar__links{
     display: flex;
-    justify-content: center;
     align-items: center;
+}
+
+.navbar__link:first-child{
+    margin-top: 8vh;
 }
 
 .navbar__link a{
