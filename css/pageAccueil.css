@@ -220,7 +220,6 @@ h1{
 /* Début de la page 2 */
 
 .principale{
-    text-align: justify;
     margin: 5px 10px;
     text-indent: 25px;
 }
@@ -297,9 +296,9 @@ h3{
     background-color: #EAD8C0;
     border-radius: 15px;
 }
+
 .tapbar li a img{
     width: 40px;
-
 }
 
 /* fin menu tapbar */
@@ -417,7 +416,6 @@ footer{
     justify-content: center;
     padding-top: 10px;
     color: #F8F8F8;
-    font-size: 1rem;
 }
 
 .reseauxSociaux{
