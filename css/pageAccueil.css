@@ -49,16 +49,12 @@ a img{
     padding-left: 3px;
 }
 
-
-
 /* fin du header */
 /* debut de la page 1 */
 
-
 .container{
     width: 100vw;
-    height: 90.6vh;
-    
+    height: 90.6vh;   
 }
 
 .slide_img{
@@ -66,52 +62,49 @@ a img{
     width: 100vw;
     height: 90.6vh;
     z-index: -1;
-
 }
 
 #one{
     background-image: url(../images/accueil2.jpg);
     background-size: cover;
-    background-position: center;
-    
+    background-position: center;   
 }
+
 #two{
     background-image: url(../images/accueil1.jpg);
     background-size: cover;
     background-position: center;
-
 }
 
 #three{
     background-image: url(../images/accueil3.jpg);
     background-size: cover;
-    background-position: center;
-    
+    background-position: center;    
 }
 
 /* élément à l'intérieur du diaporama */
 
 .insidePhoto{
-    width: 100%;
-    bottom: 11%;
     position: absolute;
     text-align: center;
+    width: 100%;
+    bottom: 11%;
     z-index: 1;
 }
 
 h1{
-    width: 80vw;
-    height: 10vh;
-    font-size: 2rem ;
-    letter-spacing: 2px;
-    margin-left: 10vw;
-    bottom: 60vh;
-    text-align: center;
-    font-family: 'Satisfy', sans-serif;
     position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    font-family: 'Satisfy', sans-serif;
+    width: 80vw;
+    height: 10vh;
+    bottom: 60vh;
+    font-size: 2rem ;
+    letter-spacing: 2px;
+    margin-left: 10vw;
     background-color: #534f56ea;
     color: #cda673f5;
     border-radius: 20px;
@@ -138,10 +131,10 @@ h1{
 
 #unique{
     font-size: 1.7rem;
-    background-color: #CDA673;
-    color: #534F56;
     border-radius: 20px;
     padding:0px 10px;
+    background-color: #CDA673;
+    color: #534F56;
     animation: slidein 5s; 
 }
 
@@ -167,21 +160,20 @@ h1{
 
 /* fin animation slogan */
 
+#i1, #i2, #i3{
+    display: none;
+}
 
 .dot{
+    position: relative;
+    display: inline-block;
     top: -10px;
     width: 16px;
     height: 16px;
     margin-left: 16px;
-    position: relative;
     border-radius: 50%;
-    display: inline-block;
     background: rgba(0,0,0);
 }   
-
-#i1, #i2, #i3{
-    display: none;
-}
 
 #i1:checked ~ #one,
 #i2:checked ~ #two,
@@ -199,9 +191,9 @@ h1{
 /* pour naviguer en cliquant sur les côtés du diaporama grâce aux labels */
 
 .pre, .nxt{
+	position: absolute;
     width: 45%;
 	height: 100%;
-	position: absolute;
 	top:0;
 	background: rgba(0,0,0,.0); 
 }
@@ -218,16 +210,16 @@ h1{
 /* Début de la page 2 */
 
 .principale{
-    margin: 10px;
-    text-indent: 15px;
     text-align: justify;
     display: block;
+    margin: 10px;
+    text-indent: 15px;
 }
 
 .fork{
+    float: left; 
     padding-right: 10px;
     padding-top: 5px;
-    float: left; 
 }
 
 .para1{
@@ -235,9 +227,7 @@ h1{
     margin-top:  5px;
 }
 
-/* frise images */
-
-.images{
+.friseImages{
     display: flex;
     overflow: auto;
     margin: 15px -10px ;
@@ -246,14 +236,13 @@ h1{
 }
     
 .para3{
-    margin-top: 15px;
     display: flex;
     justify-content: flex-end;
-    flex-direction: row-reverse;
-    
+    flex-direction: row-reverse; 
+    margin-top: 15px;
 }
 
-#tortilla{
+#imageTortilla{
     margin-left: 5px;
 }
 
@@ -269,17 +258,16 @@ h1{
 }
 
 .tapbar{
-    background: #EAD8C0;
     display: flex;
     justify-content: space-around;
     align-items: baseline;
     height: 50px;
+    background-color: #EAD8C0;
     border-radius: 15px;
 }
 
 /* fin menu tapbar */
 /* début menu burger */
-
 
 .hamburger{
     position: relative;
@@ -315,12 +303,12 @@ h1{
     height: 3px;
     border-radius: 5px;
     transition: all .5s ease-in-out;
-
 }
 
 .bar::before{
     transform: translateY(-12px);
 }
+
 .bar::after{
     transform: translateY(12px);
 }
@@ -343,11 +331,12 @@ h1{
     justify-content: center;
     align-items: center;
 }
+
 .navbar__link > a{
-    text-decoration: none;
-    color: #CDA673;
     display: block;
+    text-decoration: none;
     padding: 1rem;
+    color: #CDA673;
     font-size: 1rem;
     transition: all .4s ease-in-out ;
 }
@@ -358,7 +347,6 @@ h1{
 }
 
 /* ajout de classe grâce au Javascript Hamburger.js */
-
 
 .open-nav .bar{
     width: 0px;
@@ -380,34 +368,33 @@ h1{
 /* footer */
 
 footer{
-    background-color: #534F56;
     height: 15vh;
-    
+    background-color: #534F56;
 }
+
 .nousSuivre{
-    color: #F8F8F8;
     display: flex;
     justify-content: center;
     padding-top: 10px;
+    color: #F8F8F8;
     font-size: 1rem;
 }
+
 .reseauxSociaux{
     display: flex;
     justify-content:center;
     align-items: center;
-
 }
+
 .icone{
     padding: 12px;
-
 }
 
 .copyright{
     display: flex;
     justify-content: center;
-    background-color: #534F56;
+    padding-bottom: 15px;
     color: #F8F8F8;
     font-size: 0.8rem;
-    padding-bottom: 15px;
-
+    background-color: #534F56;
 }
