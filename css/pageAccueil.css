@@ -220,8 +220,7 @@ h1{
 
 .principale{
     text-align: justify;
-    display: block;
-    margin: 10px;
+    margin: 5px 10px;
     text-indent: 15px;
 }
 
@@ -238,8 +237,16 @@ h1{
     margin-top:  5px;
 }
 
+h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:15px;
+    text-decoration: underline;
+}
 .friseImages{
     display: flex;
+    position: relative;
     overflow: auto;
     margin: 11px -10px ;
     border-bottom: 4px solid #534F56;
@@ -250,6 +257,8 @@ h1{
     width: 43vw;
 }
     
+
+
 .para3{
     display: flex;
     justify-content: flex-end;
