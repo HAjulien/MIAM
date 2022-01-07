@@ -5,60 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/pageAccueil.css">
-    <link rel="stylesheet" href="css/headerMobile.css">
-    <link rel="stylesheet" href="css/menuAndFooterMobile.css">
     <title>Accueil Cantine MIAM</title>
 </head>
 <body>
-    
+
     <header>
         <img src="images/clickCollect/LogoPrincipal.png" alt="Logo Miam" width="90">
         <span id="profil"><a href="#">Se connecter <img src="images/monProfil.png" alt="Mon Profil" width="30"></a></span>
     </header>
-    
-    
+
+<!-- page 1 représente un diaporma -->
+
     <div class="container">
         
         <input type="radio" name="image" id="i1" >
         <input type="radio" name="image" id="i2" >
         <input type="radio" name="image" id="i3" checked>
         
-        <div class="slide_img" id="one">
-            
+        <div class="slide_img" id="one">   
             <label for="i3" class="pre"></label>
             <label for="i2" class="nxt"></label>
         </div>
         
-        <div class="slide_img" id="two">
-            
+        <div class="slide_img" id="two"> 
             <label for="i1" class="pre"></label>
             <label for="i3" class="nxt"></label>
 		</div>
         
         <div class="slide_img" id="three">
-            
             <label for="i2" class="pre"></label>
             <label for="i1" class="nxt"></label>
         </div>
-		<div class="dots">
+
+<!-- élément à l'intérieur de la diaporama (titre,slogan et point navigation) -->
+
+		<div class="insidePhoto">
             <h1>Cantine MIAM</h1>
-            <aside id="sousTitre">
-                <div id="slogan1" >une expérience</div>
-                <div id="slogan2"> <span>unique</span></div>
+            <aside id="slogan">
+                <h2 id="sloganPart1" >une expérience</h2>
+                <h2 id="sloganPart2"> <span id="unique">unique</span></h2>
             </aside>            
             <label class="dot" id="dot1" for="i1" ></label>
             <label class="dot" id="dot2" for="i2" ></label>
-            <label class="dot" id="dot3" for="i3" ></label>
-            
+            <label class="dot" id="dot3" for="i3" ></label>    
 		</div>	
 	</div>
+
+<!-- fin de la page 1 -->
+<!-- début de la page 2 -->
+
     <section class="principale">
+
         <article>
             <p class="para1">
-                <img src="images/couverts.png" alt="couverts" width="30" class="fourchette">
+                <img src="images/couverts.png" alt="couverts" width="30" class="fork">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
             </p>
         </article>
+
         <article class="colonne">
             <aside class="images">
                 <img src="images/epices.jpg" alt="epices" width="170"  >
@@ -70,6 +74,7 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </p>
         </article>
+
         <article>
             <p class="para3">
                 <img src="images/pexels-klaus-nielsen-6294359.jpg" alt="tortilla" width="130" id="tortilla">
@@ -77,6 +82,9 @@
             </p>
         </article>
     </section>
+
+<!-- fin de la page 2 -->
+<!-- menu tapbar en bas de l'écran -->
 
     <nav id="menu">
         <ul class="tapbar">
@@ -91,6 +99,10 @@
             <li> <a href="#"><img src="images/email.png" alt="mail" width="40"></a></li>
         </ul>
     </nav>
+
+<!-- fin menu tapbar -->
+<!-- menu burger à l'intérieur de la tapbar -->
+
     <nav class="navbar">
         <ul class="navbar__links">
             <li class="navbar__link "><a href="http://127.0.0.1:5500/pageAccueil.html">ACCUEIL</a></li>
@@ -103,6 +115,8 @@
         </ul>
     </nav>
 
+<!-- fin menu burger -->
+
     <footer>
         <span class="nousSuivre"> nous suivre sur :</span>
         <ul class="reseauxSociaux">
@@ -112,7 +126,9 @@
         </ul>
         <span class="copyright">CANTINE MIAM tous droits réservés, 2022</span>
     </footer>
+
     <script src="/javaScript/menuHamburger.js"></script>
+
 </body>
 
 </html>

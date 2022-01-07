@@ -1,8 +1,102 @@
+ /* applique sur toute la page */
+
+@import url('https://fonts.googleapis.com/css2?family=Sanchez&family=Satisfy&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Sanchez', serif, sans-serif;
+    font-size: clamp(10px, 1rem, 20px) ;
+    list-style: none;
+    text-decoration: none;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
 
 body{
     background-color: #CDA673;
-    color: #534F56;
+    color: #534F56;    
+}
 
+/* début header */
+
+header{
+    border-bottom: 2px solid #534F56;
+    display: flex;
+    justify-content:space-between;
+    padding: 0px 10px;
+    align-items: center;
+    height: 9vh;
+}
+
+#profil{
+    background-color: #534F56;
+    border-radius: 30px;
+}
+
+#profil a{
+    color: #F8F8F8;
+    display: flex;
+    align-items: center;
+    font-size: 0.6rem;
+    text-indent: 15px;
+    
+}
+
+a img{
+    padding-left: 3px;
+}
+
+
+
+/* fin du header */
+/* debut de la page 1 */
+
+
+.container{
+    width: 100vw;
+    height: 90.6vh;
+    
+}
+
+.slide_img{
+    position: absolute;
+    width: 100vw;
+    height: 90.6vh;
+    z-index: -1;
+
+}
+
+#one{
+    background-image: url(../images/accueil2.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+#two{
+    background-image: url(../images/accueil1.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+#three{
+    background-image: url(../images/accueil3.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+/* élément à l'intérieur du diaporama */
+
+.insidePhoto{
+    width: 100%;
+    bottom: 11%;
+    position: absolute;
+    text-align: center;
+    z-index: 1;
 }
 
 h1{
@@ -20,46 +114,43 @@ h1{
     justify-content: center;
     background-color: #534f56ea;
     color: #cda673f5;
-    animation: showup 2s;
     border-radius: 20px;
+    animation: showup 2s;
 }
 
-
-
-#sousTitre div{
+#slogan h2{
     display: inline-block;
     overflow: hidden;
     color: #F8F8F8;
-    font-size: 1.7rem;   
-    margin-bottom: 5vh;
+    font-size: 1.7rem; 
+    margin-bottom: 5vh;  
 }
 
-#slogan1{
+#sloganPart1{
     animation: showup 4s ;  
 }
 
 
-#slogan2{
+#sloganPart2{
     width: 110px;
     animation: reveal 5s; 
 }
 
-#slogan2 span{
+#unique{
     font-size: 1.7rem;
-    animation: slidein 5s ; 
     background-color: #CDA673;
     color: #534F56;
     border-radius: 20px;
     padding:0px 10px;
+    animation: slidein 5s; 
 }
 
-
+/* animation slogan */
 
 @keyframes showup {
     0% {opacity: 0;}
     30% {opacity: 0;}
     100% {opacity: 1;}
-   
 }
 
 @keyframes reveal {
@@ -71,131 +162,89 @@ h1{
 @keyframes slidein {
     0%{margin-left: -500px;}
     75%{margin-left: 0;}
-    100%{margin-left:0px;}
-    
+    100%{margin-left:0px;}   
 }  
 
+/* fin animation slogan */
 
-
-
-
-.container{
-    width: 100vw;
-    height: 90.6vh;
-
-}
-
-.slide_img{
-	position: absolute;
-	width: 100vw;
-	height: 90.6vh;
-}
-
-#one{
-    background-image: url(../images/accueil2.jpg);
-    background-size: cover;
-    background-position: center;
-
-}
-#two{
-    background-image: url(../images/accueil1.jpg);
-    background-size: cover;
-    background-position: center;
-
-}
-
-#three{
-    background-image: url(../images/accueil3.jpg);
-    background-size: cover;
-    background-position: center;
-
-}
-#i1, #i2, #i3{
-	display: none;
-}
-
-.pre, .nxt{
-	width: 45%;
-	height: 100%;
-	position: absolute;
-	top:0;
-	background: rgba(88,88,88,.0);
-
-}
-
-.pre{
-	left: 0px;
-}
-
-.nxt{
-	right: 0px;
-}
-
-.dots{
-	width: 100%;
-	bottom: 11%;
-	position: absolute;
-	text-align: center;
-	z-index: 1;
-}
 
 .dot{
-	top: -10px;
-	width: 16px;
-	height: 16px;
+    top: -10px;
+    width: 16px;
+    height: 16px;
     margin-left: 16px;
-	position: relative;
-	border-radius: 50%;
-	display: inline-block;
-	background: rgba(0,0,0);
-    
-}
+    position: relative;
+    border-radius: 50%;
+    display: inline-block;
+    background: rgba(0,0,0);
+}   
 
-.slide_img{
-	z-index: -1;
-
+#i1, #i2, #i3{
+    display: none;
 }
 
 #i1:checked ~ #one,
 #i2:checked ~ #two,
 #i3:checked ~ #three{
-	z-index: 1;
-
+    z-index: 1;  
 }
 
 #i1:checked ~ .dots #dot1,
 #i2:checked ~ .dots #dot2,
 #i3:checked ~ .dots #dot3{
-	background:#fff;
+    background:#fff;
 }
+
+/* fin des éléments à l'intérieux du diaporama */
+/* pour naviguer en cliquant sur les côtés du diaporama grâce aux labels */
+
+.pre, .nxt{
+    width: 45%;
+	height: 100%;
+	position: absolute;
+	top:0;
+	background: rgba(0,0,0,.0); 
+}
+
+.pre{
+    left: 0px;
+}
+
+.nxt{
+    right: 0px;
+}
+/*fin naviguer en cliquant sur les côtés du diaporama */
+/* fin de la page 1 */
+/* Début de la page 2 */
 
 .principale{
     margin: 10px;
     text-indent: 15px;
     text-align: justify;
     display: block;
-
 }
 
-.fourchette{
+.fork{
     padding-right: 10px;
     padding-top: 5px;
-    float: left;
-    
+    float: left; 
 }
+
 .para1{
     margin-left: 10px;
     margin-top:  5px;
 }
 
+/* frise images */
 
 .images{
     display: flex;
     overflow: auto;
     margin: 15px -10px ;
+    border-bottom: 4px solid #534F56;
+    border-top: 5px solid #534F56;
 }
-
-
+    
 .para3{
     margin-top: 15px;
     display: flex;
@@ -206,4 +255,159 @@ h1{
 
 #tortilla{
     margin-left: 5px;
+}
+
+/* fin de la page 2 */
+/* menu tapbar */
+
+#menu{
+    position: sticky;
+    bottom: 2%;
+    width: 90vw;
+    left: 5vw;
+    z-index: 10;
+}
+
+.tapbar{
+    background: #EAD8C0;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    height: 50px;
+    border-radius: 15px;
+}
+
+/* fin menu tapbar */
+/* début menu burger */
+
+
+.hamburger{
+    position: relative;
+    width: 45px;
+    height: 45px;
+    padding-top: 40px;
+    border: none;
+    border-radius: 50%;
+    background-color: #534F56;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    position: absolute;
+    background-color: #CDA673;
+    width: 30px;
+    height: 3px;
+    margin-top: -22px;
+    margin-left: 7px;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+}
+
+/* les barres en dessus 'after' et en dessous 'before' de la barre du milieux  */
+
+.bar::before, .bar::after{
+    content: "";
+    display: block;
+    position: absolute;
+    background: #CDA673;
+    width: 30px;
+    height: 3px;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+
+}
+
+.bar::before{
+    transform: translateY(-12px);
+}
+.bar::after{
+    transform: translateY(12px);
+}
+
+.navbar__links{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0vh;
+    width:100vw;
+    height: 0vh;
+    background-color: #000000bb;
+    transition: all .8s ease-in-out;
+    overflow: hidden;
+    z-index: 9;
+}
+
+.navbar__links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar__link > a{
+    text-decoration: none;
+    color: #CDA673;
+    display: block;
+    padding: 1rem;
+    font-size: 1rem;
+    transition: all .4s ease-in-out ;
+}
+
+.navbar__link > a:hover {
+    display: block;
+    letter-spacing: 2px;
+}
+
+/* ajout de classe grâce au Javascript Hamburger.js */
+
+
+.open-nav .bar{
+    width: 0px;
+}
+
+.open-nav .bar::before{
+    transform: rotate(45deg);
+}
+
+.open-nav .bar::after{
+    transform: rotate(-45deg);
+}
+
+.open-nav .navbar__links{
+    height: 100%;
+}
+
+/* fin menu burger */
+/* footer */
+
+footer{
+    background-color: #534F56;
+    height: 15vh;
+    
+}
+.nousSuivre{
+    color: #F8F8F8;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    font-size: 1rem;
+}
+.reseauxSociaux{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+}
+.icone{
+    padding: 12px;
+
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    background-color: #534F56;
+    color: #F8F8F8;
+    font-size: 0.8rem;
+    padding-bottom: 15px;
+
 }
