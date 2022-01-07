@@ -30,17 +30,26 @@ header{
     align-items: center;
     height: 9vh;
 }
+#logo{
+    height: 5.8vh;
+
+}
 
 #profil{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
     background-color: #534F56;
     border-radius: 30px;
+    height: 5.8vh;
+    
 }
 
 #profil a{
     color: #F8F8F8;
     display: flex;
     align-items: center;
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     text-indent: 15px;
     
 }
@@ -220,6 +229,8 @@ h1{
     float: left; 
     padding-right: 10px;
     padding-top: 5px;
+    width: 30px;
+
 }
 
 .para1{
@@ -230,9 +241,13 @@ h1{
 .friseImages{
     display: flex;
     overflow: auto;
-    margin: 15px -10px ;
+    margin: 11px -10px ;
     border-bottom: 4px solid #534F56;
     border-top: 5px solid #534F56;
+}
+
+.friseImages img{
+    width: 40vw;
 }
     
 .para3{
@@ -244,6 +259,8 @@ h1{
 
 #imageTortilla{
     margin-left: 5px;
+    width: 130px;
+
 }
 
 /* fin de la page 2 */
@@ -264,6 +281,10 @@ h1{
     height: 50px;
     background-color: #EAD8C0;
     border-radius: 15px;
+}
+.tapbar li a img{
+    width: 40px;
+
 }
 
 /* fin menu tapbar */
@@ -388,6 +409,10 @@ footer{
 
 .icone{
     padding: 12px;
+}
+
+.icone img{
+    width: 25px;
 }
 
 .copyright{
