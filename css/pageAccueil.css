@@ -189,9 +189,9 @@ h1{
     z-index: 1;  
 }
 
-#i1:checked ~ .dots #dot1,
-#i2:checked ~ .dots #dot2,
-#i3:checked ~ .dots #dot3{
+#i1:checked ~ .insidePhoto #dot1,
+#i2:checked ~ .insidePhoto #dot2,
+#i3:checked ~ .insidePhoto #dot3{
     background:#fff;
 }
 
