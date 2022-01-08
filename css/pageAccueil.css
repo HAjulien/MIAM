@@ -268,8 +268,6 @@ h3{
 
 .para3{
     display: flex;
-    justify-content: flex-end;
-    flex-direction: row-reverse; 
     margin-top: 15px;
 }
 
