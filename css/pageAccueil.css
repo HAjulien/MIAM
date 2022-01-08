@@ -111,7 +111,7 @@ h1{
     width: 80vw;
     height: 10vh;
     bottom: 60vh;
-    font-size: 2rem ;
+    font-size: 2.4rem ;
     letter-spacing: 2px;
     margin-left: 10vw;
     background-color: #534f56ea;
@@ -225,20 +225,26 @@ h1{
 }
 
 #bienvenue{
-    width: 200px;
-    text-align: center;
-    font: italic normal bold 1.9rem 'Satisfy';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: italic normal bold 2.1rem 'Satisfy';
+    width: 220px;
+    height: 60px;
     margin: 15px auto;
-    color: #F8F8F8;
-    animation: color 12s alternate infinite;
-    border-radius: 20px;
+    background: #EFE2CF;
+    border: 7px solid #946858;
+    border-radius: 15px;
+    animation: border 9s alternate infinite;
 }
 
-@keyframes color {
-    0%{background-color: #534F56;}
-    33%{background-color: green;}
-    66%{background-color: blue;}
-    100%{background-color: red;}
+@keyframes border{
+    0%{border: 7px solid #946858;}
+    39%{border: 7px solid #684033;}
+    61%{border: 7px solid #aa9a0d;}   
+    71%{border: 7px solid #aa9a0d;}   
+    95%{border: 7px solid #dd1066;}
+    100%{border: 7px solid #dd1066;}
 }
 
 h3{
