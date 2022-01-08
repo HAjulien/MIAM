@@ -275,9 +275,10 @@ h3{
 
 .fork{
     float: left; 
-    padding-right: 10px;
-    padding-top: 5px;
-    width: 30px;
+    padding-top: 7px;
+    margin-right: 10px;
+    margin-bottom: -4px;
+    width: 35px;
 }
 
 .friseImages{
