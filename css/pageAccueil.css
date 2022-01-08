@@ -235,14 +235,15 @@ h1{
     background: #EFE2CF;
     border: 7px solid #946858;
     border-radius: 15px;
-    animation: border 9s alternate infinite;
+    animation: border-change-color 9s alternate infinite;
 }
 
-@keyframes border{
+@keyframes border-change-color{
     0%{border: 7px solid #946858;}
-    39%{border: 7px solid #684033;}
-    61%{border: 7px solid #aa9a0d;}   
-    71%{border: 7px solid #aa9a0d;}   
+    15%{border: 7px solid #946858;}
+    35%{border: 7px solid #684033;}
+    55%{border: 7px solid #aa9a0d;}   
+    65%{border: 7px solid #aa9a0d;}   
     95%{border: 7px solid #dd1066;}
     100%{border: 7px solid #dd1066;}
 }
