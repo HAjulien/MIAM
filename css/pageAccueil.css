@@ -222,6 +222,7 @@ h1{
 .principale{
     margin: 5px 10px;
     text-indent: 25px;
+    columns: 400px;
 }
 
 #bienvenue{
@@ -256,10 +257,11 @@ h3{
     margin: 11px -10px ;
     border-bottom: 5px solid #534F56;
     border-top: 5px solid #534F56;
+    min-height: 13vh;
 }
 
 .friseImages img{
-    width: 43vw;
+    width: clamp(100px,43vw,250px);
 }
     
 
@@ -274,7 +276,6 @@ h3{
 #imageTortilla{
     margin-left: 5px;
     width: 130px;
-
 }
 
 /* fin de la page 2 */
