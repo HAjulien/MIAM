@@ -283,15 +283,17 @@ h3{
 
 .friseImages{
     display: flex;
-    overflow: auto;
+    overflow-y: scroll;
     margin: 11px -10px ;
     border-bottom: 5px solid #534F56;
     border-top: 5px solid #534F56;
     min-height: 13vh;
+    scroll-snap-type: x mandatory;
 }
 
 .friseImages img{
-    width: clamp(100px,43vw,230px);
+    width: clamp(100px,47vw,230px);
+    scroll-snap-align: center;
 }
     
 
