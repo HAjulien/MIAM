@@ -261,7 +261,7 @@ h3{
 }
 
 .friseImages img{
-    width: clamp(100px,43vw,250px);
+    width: clamp(100px,43vw,230px);
 }
     
 
