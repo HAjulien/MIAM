@@ -62,6 +62,22 @@ label{
     padding-right: 10px;
 }
 
+input{
+    caret-color: #CDA673;
+    color: #534F56;
+}
+input::placeholder{
+    color: #534F56;
+}
+input:focus::placeholder{
+    color: transparent;
+}
+
+textarea{
+    color: #534F56;
+    caret-color: #CDA673;
+}
+
 #avis{
     height: 130px;
     width: 237px;
