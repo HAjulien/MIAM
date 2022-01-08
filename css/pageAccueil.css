@@ -26,7 +26,7 @@ p::first-letter{
     font-size: 1.3rem;
     color: #dd1066;
 }
-selection texte
+/* selection texte */
 ::selection{
     color: #CDA673;
     background-color: #534F56;
