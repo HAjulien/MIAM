@@ -274,6 +274,7 @@ h3{
 }
 
 #imageTortilla{
+    float: right;
     margin-left: 5px;
     width: 130px;
 }
