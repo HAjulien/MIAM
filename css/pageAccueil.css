@@ -302,6 +302,7 @@ h3{
 
 #imageTortilla{
     float: right;
+    border-radius: 15px;
     margin-left: 5px;
     width: 130px;
 }
