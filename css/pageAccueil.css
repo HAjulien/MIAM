@@ -6,6 +6,7 @@
     margin: 0px;
     padding: 0px;
     font-family: 'Sanchez', serif, sans-serif;
+    font-size: clamp(10px, 1rem, 20px) ;
     list-style: none;
     text-decoration: none;
     /* transition en douceur sur les ancres */
@@ -117,13 +118,14 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     font-family: 'Satisfy', sans-serif;
-    width: 80vw;
+    width: 300px;
     height: 10vh;
     bottom: 60vh;
-    font-size: 2.4rem ;
+    font-size: 2.5rem ;
     letter-spacing: 2px;
-    margin-left: 10vw;
+    margin-left: calc(50% - 150px);
     background-color: #534f56ea;
     color: #cda673f5;
     border-radius: 20px;
