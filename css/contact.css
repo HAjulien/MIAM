@@ -63,7 +63,7 @@ label{
 }
 
 input{
-    caret-color: #CDA673;
+    caret-color: #1fc8d4;
     color: #534F56;
 }
 input::placeholder{
@@ -72,10 +72,18 @@ input::placeholder{
 input:focus::placeholder{
     color: transparent;
 }
-
+input:focus{
+    outline: none;
+    border: 3px solid #cf0d7e;
+    
+}
 textarea{
     color: #534F56;
-    caret-color: #CDA673;
+    caret-color: #1fc8d4;
+}
+textarea:focus{
+     outline-color: #cf0d7e;  
+     /* outline-color laisse petite partie couleur précédente (verte) */
 }
 
 #avis{
