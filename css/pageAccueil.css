@@ -31,6 +31,7 @@ p::first-letter{
     font-size: 1.3rem;
     color: #dd1066;
 }
+
 /* selection texte */
 ::selection{
     color: #CDA673;
@@ -90,22 +91,21 @@ a img{
     z-index: -1;
 }
 
+#one, #two, #three{
+    background-size: cover;
+    background-position: center;    
+} 
+
 #one{
     background-image: url(../images/accueil2.jpg);
-    background-size: cover;
-    background-position: center;   
 }
 
 #two{
     background-image: url(../images/accueil1.jpg);
-    background-size: cover;
-    background-position: center;
 }
 
 #three{
     background-image: url(../images/accueil3.jpg);
-    background-size: cover;
-    background-position: center;    
 }
 
 /* élément à l'intérieur du diaporama */
@@ -123,7 +123,6 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
     font-family: 'Satisfy', sans-serif;
     width: 300px;
     height: 10vh;
@@ -175,7 +174,7 @@ h1{
 
 @keyframes reveal {
     0% {opacity: 0; width: 0;}
-    70% {opacity: 0; width: 75px;}
+    75% {opacity: 0; width: 75px;}
     100% {opacity: 1; width: 110px;}
 }
 
@@ -195,9 +194,9 @@ h1{
     position: relative;
     display: inline-block;
     top: -10px;
-    width: 16px;
-    height: 16px;
-    margin-left: 16px;
+    width: 25px;
+    height: 25px;
+    margin-left: 30px;
     border-radius: 50%;
     background: rgba(255,255,255);
     transition: all 0.35s ease-in-out;
@@ -226,7 +225,6 @@ h1{
 	position: absolute;
     width: 45%;
 	height: 100%;
-	top:0;
 	background: rgba(0,0,0,.0); 
 }
 
@@ -244,6 +242,7 @@ h1{
 
 .principale{
     margin: 10px 10px;
+    columns: 400px;
     font-size: 1.5rem;
 }
 
@@ -252,6 +251,7 @@ h1{
     align-items: center;
     justify-content: center;
     font: italic normal bold 2rem 'Satisfy';
+    letter-spacing: 2px;
     width: 230px;
     height: 60px;
     margin: 15px auto;
@@ -259,7 +259,6 @@ h1{
     border: 7px solid #684033;
     border-radius: 15px;
     animation: border-change-color 8s alternate infinite;
-    letter-spacing: 2px;
 }
 
 @keyframes border-change-color{
@@ -273,13 +272,15 @@ h1{
     100%{border: 7px solid #684033;}
 }
 
+#bienvenue, h3{
+    letter-spacing: 2px;
+}
+
 h3{
     text-align: center;
     margin: 30px 0px;
     font-size: 1.3rem;
     text-decoration: underline;
-    text-indent: 0px;
-    letter-spacing: 2px;
 }
 
 .fork{
