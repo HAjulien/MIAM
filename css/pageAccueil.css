@@ -143,7 +143,7 @@ h1{
 }
 
 #sloganPart1{
-    animation: showup 6s ;  
+    animation: showup 5s ;  
 }
 
 
@@ -172,7 +172,8 @@ h1{
 
 @keyframes reveal {
     0% {opacity: 0; width: 0;}
-    75% {opacity: 0; width: 75px;}
+    50% {opacity: 0; width: 65px;}
+    75% {opacity: 0; width: 65px;}
     100% {opacity: 1; width: 110px;}
 }
 
@@ -243,6 +244,7 @@ h1{
 
 .principale{
     margin: 10px;
+    columns: 500px;
 }
 
 #bienvenue{
@@ -257,14 +259,14 @@ h1{
     background: #EFE2CF;
     border: 7px solid #684033;
     border-radius: 15px;
-    animation: border-change-color 8s alternate infinite;
+    animation: border-change-color 6s alternate infinite;
 }
 
 @keyframes border-change-color{
     0%{border: 7px solid #18830F;}
     5%{border: 7px solid #18830F;}
-    25%{border: 7px solid #eed918;}
-    35%{border: 7px solid #eed918;}
+    25%{border: 7px solid #2078dd;}
+    35%{border: 7px solid #2078dd;}
     65%{border: 7px solid #dd1066;}   
     75%{border: 7px solid #dd1066;}   
     95%{border: 7px solid #684033;}
