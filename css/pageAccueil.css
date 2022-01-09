@@ -18,7 +18,7 @@
 }
 
 body{
-    background-color: #CDA673;
+    background-image: linear-gradient(to left top, #cda673, #d6b589, #dec4a0, #e7d3b7, #efe2cf);
     color: #534F56;    
 }
 
@@ -41,6 +41,7 @@ p::first-letter{
 /* début header */
 
 header{
+    background-image: linear-gradient(to left top, #cda673, #d6b589, #dec4a0, #e7d3b7, #efe2cf);
     border-bottom: 2px solid #534F56;
     display: flex;
     justify-content:space-between;
@@ -157,8 +158,8 @@ h1{
     font-size: 1.5rem;
     border-radius: 20px;
     padding:0px 10px;
-    background-color: #CDA673;
-    color: #534F56;
+    background-image: linear-gradient(to right top, #534f56, #76606c, #9e7176, #be8875, #cda673);
+    color: #F8F8F8;
     animation: slidein 5s;     
 }
 
@@ -210,13 +211,13 @@ h1{
 }
 
 #i1:checked ~ .insidePhoto #dot1{
-    background-color: #18830F;
+    background-color: #684033;
 }
 #i2:checked ~ .insidePhoto #dot2{
-    background:#eed918;
+    background:#dd1066;
 }
 #i3:checked ~ .insidePhoto #dot3{
-    background-color: #dd1066;
+    background-color: #18830F;
 }
 
 /* fin des éléments à l'intérieux du diaporama */
@@ -256,7 +257,7 @@ h1{
     width: 230px;
     height: 60px;
     margin: 15px auto;
-    background: #EFE2CF;
+    background: #ecc899;
     border: 7px solid #684033;
     border-radius: 15px;
     animation: border-change-color 6s alternate infinite;
