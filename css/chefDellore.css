@@ -10,16 +10,16 @@ section{
 }
 
 article:nth-child(1){
-    height: 100vh;
+    height: clamp(750px,100vh,800px);
     scroll-snap-align: end;
 }
 article:nth-child(2){
-    height: 91vh;
+    height: clamp(700px,91vh,700px);
     scroll-snap-align: start;
 
 }
 article:nth-child(3){
-    height: 90vh;
+    height: clamp(600px,90vh,700px);
     scroll-snap-align: start;
 }
 footer{
