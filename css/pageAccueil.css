@@ -185,6 +185,7 @@ h1{
 }  
 
 /* fin animation slogan */
+/* enleve les bouttons radion pour les remplacer par nos bouttons labels (dot) que l'on va styliser */
 
 #i1, #i2, #i3{
     display: none;
@@ -241,7 +242,7 @@ h1{
 /* Début de la page 2 */
 
 .principale{
-    margin: 10px 10px;
+    margin: 10px;
 }
 
 #bienvenue{
@@ -291,13 +292,13 @@ h3{
 
 .friseImages{
     display: flex;
-    overflow-y: scroll;
     margin: 30px -10px ;
     background-color: #684033;
     border-bottom: 5px solid #684033;
     border: 5px solid #684033;
     border-radius: 12px;
     min-height: 13vh;
+    overflow-y: scroll;
     scroll-snap-type: x mandatory;
 }
 
