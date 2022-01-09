@@ -512,11 +512,17 @@ footer{
     background-color: #534F56;
 }
 
-/* media queries desktop */
-@media screen and (min-width:1100px) {
+/* media queries desktop et tablette */
+@media screen and (min-width:760px) {
 
+    .container{
+        display: none;
+    }
+    .tapbar{
+        display: none;
+    }
     .principale{
         columns: 2;
     }
-    
+
 }
