@@ -245,7 +245,6 @@ h1{
 
 .principale{
     margin: 10px;
-    columns: 500px;
 }
 
 #bienvenue{
@@ -334,11 +333,12 @@ figcaption{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Satisfy';
     color: #fff;
     background-color: #534f56c7;
+    padding-right: 5px;
     /* legende en px reste même taille que la photo */
-    font-size: 28px;
-    font-family: 'Satisfy';
+    font-size: 31px;
     /* pour que les bords intérieux legende soit aussi arrondi */
     border-radius: 10px 0px 0px 10px ;
 }
@@ -355,10 +355,11 @@ figcaption{
 
 #menu{
     position: sticky;
-    bottom: 1%;
+    bottom: 0;
     width: 90vw;
     left: 5vw;
     z-index: 10;
+    margin-top: 40px;
 }
 
 .tapbar{
