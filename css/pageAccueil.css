@@ -41,6 +41,7 @@ p::first-letter{
 /* début header */
 
 header{
+    /* code trouvé sur my color space */
     background-image: linear-gradient(to left top, #cda673, #d6b589, #dec4a0, #e7d3b7, #efe2cf);
     border-bottom: 2px solid #534F56;
     display: flex;
@@ -245,6 +246,7 @@ h1{
 
 .principale{
     margin: 10px;
+    columns: 500px;
 }
 
 #bienvenue{
@@ -351,7 +353,7 @@ figcaption{
 }
 
 /* fin de la page 2 */
-/* menu tapbar */
+/* menu tapbar */   
 
 #menu{
     position: sticky;
@@ -359,7 +361,6 @@ figcaption{
     width: 90vw;
     left: 5vw;
     z-index: 10;
-    margin-top: 40px;
 }
 
 .tapbar{
