@@ -242,8 +242,6 @@ h1{
 
 .principale{
     margin: 10px 10px;
-    columns: 400px;
-    font-size: 1.5rem;
 }
 
 #bienvenue{
@@ -322,8 +320,7 @@ h3{
     background-color: #18830F;
     /* background vert= plat vege, rouge=viande, bleu=poisson */
     margin-left: 10px;
-    margin-bottom: 7px;
-    margin-right: -10px;
+    margin-bottom: 5px;
 }
 
 figcaption{
@@ -334,6 +331,7 @@ figcaption{
     align-items: center;
     color: #fff;
     background-color: #534f56c7;
+    /* legende reste même taille que la photo */
     font-size: 28px;
     font-family: 'Satisfy';
     border-radius: 10px 0px 0px 10px ;
@@ -347,13 +345,12 @@ figcaption{
 
 }
 
-
 /* fin de la page 2 */
 /* menu tapbar */
 
 #menu{
     position: sticky;
-    bottom: 2%;
+    bottom: 1%;
     width: 90vw;
     left: 5vw;
     z-index: 10;
@@ -383,7 +380,6 @@ figcaption{
     border: none;
     border-radius: 50%;
     background-color: #534F56;
-    cursor: pointer;
 }
 
 .bar{
@@ -445,15 +441,11 @@ figcaption{
 .navbar__link a{
     display: block;
     text-decoration: none;
-    padding: 1rem;
+    text-align: center;
+    padding: 15px;
     color: #CDA673;
     font-size: 1.3rem;
     transition: all .4s ease-in-out ;
-}
-
-.navbar__link a:hover {
-    display: block;
-    letter-spacing: 2px;
 }
 
 /* ajout de classe grâce au Javascript Hamburger.js */
@@ -478,8 +470,8 @@ figcaption{
 /* footer */
 
 footer{
-    height: 15vh;
     background-color: #534F56;
+
 }
 
 .nousSuivre{
