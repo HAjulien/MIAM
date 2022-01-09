@@ -1,9 +1,31 @@
 
 body{
-    background-color: #CDA673;
     color: #534F56;
+    background-color: #CDA673;
+}
+section{
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    height: 91vh;
 }
 
+article:nth-child(1){
+    height: 100vh;
+    scroll-snap-align: end;
+}
+article:nth-child(2){
+    height: 91vh;
+    scroll-snap-align: start;
+
+}
+article:nth-child(3){
+    height: 90vh;
+    scroll-snap-align: start;
+}
+footer{
+    scroll-snap-align: start;
+    height: 15vh;
+}
 article img{
     width: 100vw;
     margin: 0px 0px 15px 0px;
@@ -26,7 +48,6 @@ h1{
 p{
     text-indent: 35px;
     margin: 0px 10px 10px 10px;
-    text-align: justify;
 }
 
 p:last-child{
