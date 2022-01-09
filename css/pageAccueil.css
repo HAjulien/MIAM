@@ -48,9 +48,9 @@ header{
     align-items: center;
     height: 9vh;
 }
+
 #logo{
     height: 5.8vh;
-
 }
 
 #profil{
@@ -59,8 +59,7 @@ header{
     justify-content: flex-end;
     background-color: #534F56;
     border-radius: 30px;
-    height: 5.8vh;
-    
+    height: 5.8vh;  
 }
 
 #profil a{
@@ -68,8 +67,7 @@ header{
     display: flex;
     align-items: center;
     font-size: 0.8rem;
-    text-indent: 15px;
-    
+    text-indent: 15px;  
 }
 
 a img{
@@ -185,7 +183,7 @@ h1{
 }  
 
 /* fin animation slogan */
-/* enleve les bouttons radion pour les remplacer par nos bouttons labels (dot) que l'on va styliser */
+/* enleve les bouttons radio pour les remplacer par nos bouttons labels (dot) que l'on va styliser */
 
 #i1, #i2, #i3{
     display: none;
@@ -220,7 +218,7 @@ h1{
 }
 
 /* fin des éléments à l'intérieux du diaporama */
-/* pour naviguer en cliquant sur les côtés du diaporama grâce aux labels */
+/* pour naviguer en cliquant sur les côtés du diaporama grâce aux autres labels */
 
 .pre, .nxt{
 	position: absolute;
@@ -311,6 +309,7 @@ h3{
     margin: 15px 0px;
 }
 
+/* photo 3 représente omelette (conteneur, legende, photo)*/
 #photo__Omelette{
     float: right;
     display: grid;
@@ -332,16 +331,16 @@ figcaption{
     align-items: center;
     color: #fff;
     background-color: #534f56c7;
-    /* legende reste même taille que la photo */
+    /* legende en px reste même taille que la photo */
     font-size: 28px;
     font-family: 'Satisfy';
+    /* pour que les bords intérieux legende soit aussi arrondi */
     border-radius: 10px 0px 0px 10px ;
-    /* pour que les bords intérieux photo soit aussi arrondi */
 }
 
 .omelette{
     width: 135px;
-    /* pour que les bords intérieux legende soit aussi arrondi */
+    /* pour que les bords intérieux photo soit aussi arrondi */
     border-radius: 0px 10px 10px 0px ;
 
 }
@@ -395,7 +394,7 @@ figcaption{
     transition: all .5s ease-in-out;
 }
 
-/* les barres en dessus 'after' et en dessous 'before' de la barre du milieux  */
+/* les barres en dessus et en dessous 'after', 'before' de la barre du milieux  */
 
 .bar::before, .bar::after{
     content: "";
@@ -416,6 +415,7 @@ figcaption{
     transform: translateY(12px);
 }
 
+/* lien à l'intérieux du menu déroulant */
 .navbar__links{
     display: flex;
     flex-direction: column;
@@ -449,7 +449,7 @@ figcaption{
     transition: all .4s ease-in-out ;
 }
 
-/* ajout de classe grâce au Javascript Hamburger.js */
+/* ajout de classe grâce au Javascript Hamburger.js pour faire apparaitre le menu déroulant grâce au bouton .Hamburger*/
 
 .open-nav .bar{
     width: 0px;
