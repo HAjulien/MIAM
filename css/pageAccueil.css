@@ -259,17 +259,17 @@ h1{
     background: #EFE2CF;
     border: 7px solid #684033;
     border-radius: 15px;
-    animation: border-change-color 11s alternate infinite;
+    animation: border-change-color 8s alternate infinite;
     letter-spacing: 2px;
 }
 
 @keyframes border-change-color{
     0%{border: 7px solid #18830F;}
     5%{border: 7px solid #18830F;}
-    30%{border: 7px solid #eed918;}
-    40%{border: 7px solid #eed918;}
-    60%{border: 7px solid #dd1066;}   
-    70%{border: 7px solid #dd1066;}   
+    25%{border: 7px solid #eed918;}
+    35%{border: 7px solid #eed918;}
+    65%{border: 7px solid #dd1066;}   
+    75%{border: 7px solid #dd1066;}   
     95%{border: 7px solid #684033;}
     100%{border: 7px solid #684033;}
 }
