@@ -79,11 +79,11 @@ a img{
 
 .container{
     height: 90.6vh;   
+    width: 100vw;
 }
 
 .slide_img{
     position: absolute;
-    display: inline-block;
     width: 100vw;
     height: 90.6vh;
     z-index: -1;
@@ -132,7 +132,6 @@ h1{
     color: #cda673f5;
     border-radius: 20px;
     animation: showup 2s;
-    transition:  all 2s ease-in-out ;
 }
 
 #slogan h2{
