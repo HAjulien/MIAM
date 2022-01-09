@@ -357,7 +357,7 @@ figcaption{
 
 #menu{
     position: sticky;
-    bottom: 0;
+    bottom: 0%;
     width: 90vw;
     left: 5vw;
     z-index: 10;
@@ -512,8 +512,8 @@ footer{
     background-color: #534F56;
 }
 
-/* media queries desktop et tablette */
-@media screen and (min-width:760px) {
+/* media queries pc */
+@media screen and (min-width:766px) {
 
     .container{
         display: none;
