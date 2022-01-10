@@ -278,22 +278,14 @@ h1{
 }
 
 @keyframes border-change-color{
-    0%{border: 5px solid #18830F;box-shadow: 10px 10px 10px 0px #093805f5;
-}
-    5%{border: 5px solid #18830F;box-shadow: 10px 10px 10px 0px #093805f5;
-}
-    25%{border: 5px solid #2078dd;box-shadow: 10px 10px 10px 0px #062f5f;
-}
-    35%{border: 5px solid #2078dd;box-shadow: 10px 10px 10px 0px #062f5f;
-}
-    65%{border: 5px solid #dd1066;box-shadow: 10px 10px 10px 0px #6e0d36;
-}   
-    75%{border: 5px solid #dd1066;box-shadow: 10px 10px 10px 0px #6e0d36;
-}   
-    95%{border: 5px solid #684033;box-shadow: 10px 10px 10px 0px #381407;
-}
-    100%{border: 5px solid #684033;box-shadow: 10px 10px 10px 0px #381407;
-}
+    0%{border: 5px solid #18830F;box-shadow: 10px 10px 10px 0px #093805f5;}
+    5%{border: 5px solid #18830F;box-shadow: 10px 10px 10px 0px #093805f5;}
+    25%{border: 5px solid #2078dd;box-shadow: 10px 10px 10px 0px #062f5f;}
+    35%{border: 5px solid #2078dd;box-shadow: 10px 10px 10px 0px #062f5f;}
+    65%{border: 5px solid #dd1066;box-shadow: 10px 10px 10px 0px #6e0d36;}   
+    75%{border: 5px solid #dd1066;box-shadow: 10px 10px 10px 0px #6e0d36;}   
+    95%{border: 5px solid #684033;box-shadow: 10px 10px 10px 0px #381407;}
+    100%{border: 5px solid #684033;box-shadow: 10px 10px 10px 0px #381407;}
 }
 
 #bienvenue, h3{
@@ -317,7 +309,7 @@ h3{
 
 .friseImages{
     display: flex;
-    margin: 30px -10px ;
+    margin: 20px -10px ;
     background-color: #684033;
     border-bottom: 5px solid #684033;
     border: 5px solid #684033;
