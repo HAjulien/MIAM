@@ -261,6 +261,7 @@ h1{
     columns: 500px;
 }
 
+ /* pencarte bienvenue */
 #bienvenue{
     display: flex;
     align-items: center;
@@ -277,6 +278,7 @@ h1{
     box-shadow: 10px 10px 10px 0px ;
 }
 
+/* animation des bords pencarte */
 @keyframes border-change-color{
     0%{border: 5px solid #18830F;box-shadow: 10px 10px 10px 0px #093805f5;}
     5%{border: 5px solid #18830F;box-shadow: 10px 10px 10px 0px #093805f5;}
@@ -310,17 +312,20 @@ h3{
 .friseImages{
     display: flex;
     margin: 20px -10px ;
+     /*Pour remplir les marges des images */
     background-color: #684033;
     border-bottom: 5px solid #684033;
     border: 5px solid #684033;
     border-radius: 12px;
+    overflow-y: scroll; 
+    /*faire scroll aimanté des images */
     min-height: 13vh;
-    overflow-y: scroll;
     scroll-snap-type: x mandatory;
 }
 
 .friseImages img{
     width: clamp(100px,45vw,230px);
+    /* aimanté aux milieu des images */
     scroll-snap-align: center;
 }
 
@@ -328,8 +333,8 @@ h3{
     margin: 15px 0px;
 }
 
-/* photo 3 représente omelette (conteneur, legende, photo)*/
-#photo__Omelette{
+/* photo__omelette est le conteneur de legende et photo) */
+#photo__omelette{
     float: right;
     display: grid;   /* pour mettre legende sur le coté */
     grid-template-columns: 33px 1fr;
