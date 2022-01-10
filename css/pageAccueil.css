@@ -130,7 +130,7 @@ h1{
     font-size: 2.5rem ;
     letter-spacing: 2px;
     margin-left: calc(50% - 150px);
-    background-color: #6a656ee0;
+    background-color: #6a656ee5;
     color: #cda673f5;
     border-radius: 20px;
     animation: showup 2s;
@@ -259,20 +259,29 @@ h1{
     height: 60px;
     margin: 15px auto;
     background: #ecc899;
-    border: 7px solid #684033;
+    border: 5px solid #684033;
     border-radius: 15px;
     animation: border-change-color 6s alternate infinite;
+    box-shadow: 10px 10px 10px 0px ;
 }
 
 @keyframes border-change-color{
-    0%{border: 7px solid #18830F;}
-    5%{border: 7px solid #18830F;}
-    25%{border: 7px solid #2078dd;}
-    35%{border: 7px solid #2078dd;}
-    65%{border: 7px solid #dd1066;}   
-    75%{border: 7px solid #dd1066;}   
-    95%{border: 7px solid #684033;}
-    100%{border: 7px solid #684033;}
+    0%{border: 5px solid #18830F;box-shadow: 10px 10px 10px 0px #093805f5;
+}
+    5%{border: 5px solid #18830F;box-shadow: 10px 10px 10px 0px #093805f5;
+}
+    25%{border: 5px solid #2078dd;box-shadow: 10px 10px 10px 0px #062f5f;
+}
+    35%{border: 5px solid #2078dd;box-shadow: 10px 10px 10px 0px #062f5f;
+}
+    65%{border: 5px solid #dd1066;box-shadow: 10px 10px 10px 0px #6e0d36;
+}   
+    75%{border: 5px solid #dd1066;box-shadow: 10px 10px 10px 0px #6e0d36;
+}   
+    95%{border: 5px solid #684033;box-shadow: 10px 10px 10px 0px #381407;
+}
+    100%{border: 5px solid #684033;box-shadow: 10px 10px 10px 0px #381407;
+}
 }
 
 #bienvenue, h3{
@@ -318,7 +327,7 @@ h3{
 /* photo 3 représente omelette (conteneur, legende, photo)*/
 #photo__Omelette{
     float: right;
-    display: grid;
+    display: grid;   /* pour mettre legende sur le coté */
     grid-template-columns: 33px 1fr;
     grid-row: 1fr;
     border-radius: 14px;
