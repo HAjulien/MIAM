@@ -79,18 +79,21 @@ a img{
 /* fin du header */
 /* debut de la page 1 */
 
+/* inutile de donner les dimension de container  */
 .container{
-    height: 90.6vh;   
+    height: 90.7vh;   
     width: 100vw;
 }
-
+/* conteneur on vont se coller les images */
 .slide_img{
     position: absolute;
     width: 100vw;
-    height: 90.6vh;
+    height: 90.7vh;
+/* place les images en arriere plan pour ne pas gêner les interaction button */
     z-index: -1;
 }
 
+/* image diaporama */
 #one, #two, #three{
     background-size: cover;
     background-position: center; 
@@ -148,12 +151,11 @@ h1{
     animation: showup 5s ;  
 }
 
-
+/* pour quel texte "unique" reste caché jusqu'au glissement */
 #sloganPart2{
     width: 110px;
     animation: reveal 5s; 
 }
-
 
 #unique a{
     font-size: 1.5rem;
@@ -167,21 +169,24 @@ h1{
 /* animation slogan */
 
 @keyframes showup {
+    
     0% {opacity: 0;}
+/* fin du delai animation */
     30% {opacity: 0;}
     100% {opacity: 1;}
 }
 
 @keyframes reveal {
-    0% {opacity: 0; width: 0;}
-    50% {opacity: 0; width: 65px;}
-    75% {opacity: 0; width: 65px;}
+    0% {opacity: 0; width: 0px;}
+/* 55% début de l'animation 0 a 55% represente delai animation */
+    55% {opacity: 0; width: 0px;}
+    70% {opacity: 1; width: 0px;}
+    /* se decale légérement et lentementsur gauche */
     100% {opacity: 1; width: 110px;}
 }
 
 @keyframes slidein {
-    0%{margin-left: -500px;}
-    75%{margin-left: 0;}
+    55%{margin-left: 200px;}
     100%{margin-left:0px;}   
 }  
 
@@ -205,13 +210,13 @@ h1{
     transition: all 0.35s ease-in-out;
     box-shadow: 4px 4px 4px 0px black;
 }   
-
+/* lorsque le boutton est appuyé, alors la photo associé qui est en arriere plan (z indez -1) passe "devant" les autre image */
 #i1:checked ~ #one,
 #i2:checked ~ #two,
 #i3:checked ~ #three{
     z-index: 1;  
 }
-/*augmente taile des boutons a cause de l illusion optique il aparaisent plus petit */
+/*augmente taille des boutons de couleurs. Â cause de animation transition les bouton blancs aparaisent plus grand */
 #i1:checked ~ .insidePhoto #dot1, #i2:checked ~ .insidePhoto #dot2, #i3:checked ~ .insidePhoto #dot3{
     width: 23px;                      
     height: 23px;  
