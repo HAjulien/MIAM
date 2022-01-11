@@ -79,18 +79,11 @@ a img{
 /* fin du header */
 /* debut de la page 1 */
 
-/* inutile de donner les dimension de container  */
-.container{
-    height: 90.7vh;   
-    width: 100vw;
-}
 /* conteneur où vont se coller les images */
 .slide_img{
     position: absolute;
     width: 100vw;
     height: 90.7vh;
-/* place les images en arriere plan pour ne pas gêner les interaction button */
-    z-index: -1;
 }
 
 /* image diaporama */
@@ -151,9 +144,9 @@ h1{
     animation: showup 5s ;  
 }
 
-/* pour quel texte "unique" reste caché jusqu'au glissement */
 #sloganPart2{
     width: 110px;
+    /* animation pour quel texte "unique" reste caché jusqu'au glissement */
     animation: reveal 5s; 
 }
 
@@ -210,7 +203,7 @@ h1{
     transition: all 0.35s ease-in-out;
     box-shadow: 4px 4px 4px 0px black;
 }   
-/* lorsque le boutton est appuyé, alors la photo associé qui est en arriere plan (z indez -1) passe "devant" les autre image */
+/* lorsque le boutton (ex: boutton 2) est appuyé, alors la photo associé (photo 2) passe "devant" les autre images */
 #i1:checked ~ #one,
 #i2:checked ~ #two,
 #i3:checked ~ #three{
@@ -222,7 +215,7 @@ h1{
     height: 23px;  
     
 }
-
+/* bouton appuyés */
 #i1:checked ~ .insidePhoto #dot1{
     background-color: #cda673b9;
     border: 4px solid #7a603e;
@@ -239,7 +232,7 @@ h1{
 }
 
 /* fin des éléments à l'intérieux du diaporama */
-/* pour naviguer en cliquant sur les côtés du diaporama grâce aux autres labels */
+/* pour naviguer en cliquant sur les côtés du diaporama grâce aux labels */
 
 .pre, .nxt{
 	position: absolute;
@@ -341,7 +334,7 @@ h3{
 /* photo__omelette est le conteneur de legende et photo) */
 #photo__omelette{
     float: right;
-    display: grid;   /* pour mettre legende sur le coté */
+    display: grid;   /* pour mettre legende sur le coté gauche de l'image */
     grid-template-columns: 33px 1fr;
     grid-row: 1fr;
     border-radius: 14px;
@@ -362,7 +355,7 @@ figcaption{
     color: #fff;
     background-color: #534f56c7;
     padding-right: 5px;
-    /* legende en px reste même taille que la photo */
+    /* legende en px reste tout le temps même taille que la photo */
     font-size: 31px;
     /* pour que les bords intérieux legende soit aussi arrondi */
     border-radius: 10px 0px 0px 10px ;
