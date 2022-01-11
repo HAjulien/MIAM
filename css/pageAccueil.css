@@ -78,7 +78,10 @@ a img{
 
 /* fin du header */
 /* debut de la page 1 */
-
+.container{
+    width: 100vw;
+    height: 90.7vh;
+}
 /* conteneur où vont se coller les images */
 .slide_img{
     position: absolute;
