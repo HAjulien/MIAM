@@ -206,7 +206,7 @@ h1{
     transition: all 0.35s ease-in-out;
     box-shadow: 4px 4px 4px 0px black;
 }   
-/* lorsque le boutton (ex: boutton 2) est appuyé, alors la photo associé (photo 2) passe "devant" les autre images */
+/*on associe radio boutton aux images. lorsque le boutton (ex: boutton 2) est appuyé, alors la photo que l'on associe (photo 2) passe "devant" les autre images */
 #i1:checked ~ #one,
 #i2:checked ~ #two,
 #i3:checked ~ #three{
