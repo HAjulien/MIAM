@@ -1,0 +1,87 @@
+$BackgroundColorHeader:  #1b0744;
+$BackgroundColorArticle: #9085a3;
+$colorTexte: white;
+$width: 100%;
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #dddae1;
+
+    header{
+        display: flex;
+        flex-direction: row;
+        width: $width;
+
+        #titre {
+            display: flex;
+            color: $colorTexte;
+            background-color: $BackgroundColorHeader;
+            width: $width;
+            height: 122px;
+            justify-content: center;
+            align-items: center;
+            margin-left: 5px;
+            padding: 0px 10px 0px 10px;
+        }    
+    }
+
+    nav {
+        width: 80%;
+        height: 50px;
+        background-color: $BackgroundColorHeader;
+        margin-top: 5px;
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+
+            li {
+                padding: 0 0 0 35px;
+
+                a {
+                    color: $colorTexte;
+                    text-decoration: none;
+                }
+
+            }
+        }
+    }
+    
+    section {
+        display: flex;
+        flex-direction: row;
+        width: $width;
+        height: calc(100vh - 253px);
+        margin: 5px;
+
+        article {
+            width: 60%;
+            background-color: $BackgroundColorArticle;
+            margin: 0px 2.5px 0px 0px;
+        }
+
+        aside {
+            width:40%;
+            background-color: $BackgroundColorArticle;
+            margin: 0px 0px 0px 2.5px;
+
+            p {
+                margin-left: 10px;
+            }
+        }
+    }
+
+    footer {
+        display:flex;
+        width: $width;
+        min-height: 50px;
+        color: $colorTexte;
+        background-color: $BackgroundColorHeader;
+        justify-content: center;
+    }  
+}
