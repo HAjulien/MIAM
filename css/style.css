@@ -267,16 +267,20 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
-    font: italic normal bold 2rem 'Satisfy';
-    letter-spacing: 2px;
     width: 230px;
     height: 60px;
-    margin: 15px auto;
     background: #ecc899;
+    /* que pour chrome et safari */
+    background: linear-gradient(to right, #eba640 0%, #f80000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font: italic normal bold 2rem 'Satisfy';
+    margin: 15px auto;
     border: 5px solid #684033;
+    letter-spacing: 2px;
     border-radius: 15px;
-    animation: border-change-color 6s alternate infinite;
     box-shadow: 10px 10px 10px 0px ;
+    animation: border-change-color 6s alternate infinite;
 }
 
 /* animation des bords pencarte */
@@ -298,7 +302,7 @@ h1{
 h3{
     text-align: center;
     margin: 30px 0px;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     text-decoration: underline;
 }
 
