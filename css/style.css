@@ -35,8 +35,8 @@ p::first-letter{
 
 /* quand on selectionne un morceau texte */
 ::selection{
-    color: #CDA673;
-    background-color: #534F56;
+    color: #d6b589;
+    background-color: #040404;
 }
 
 /* début header */
@@ -301,7 +301,7 @@ h1{
 
 h3{
     text-align: center;
-    margin: 30px 0px;
+    margin: 50px 0px;
     font-size: 1.5rem;
     text-decoration: underline;
 }
