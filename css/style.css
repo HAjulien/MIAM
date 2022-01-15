@@ -18,9 +18,9 @@
 }
 
 body{
-/* code trouvé sur my color space  change de couleur pour contraste*/
+/* code trouvé sur my color space */
     background-image: linear-gradient(to left top, #cda673, #d6b589, #dec4a0, #e7d3b7, #efe2cf);
-    color: #131114;    
+    color: #131212;    
 }
 
 p{
