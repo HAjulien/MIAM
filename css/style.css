@@ -182,8 +182,8 @@ h1{
 }
 
 @keyframes slidein {
-    55%{margin-left: 200px;}
-    100%{margin-left:0px;}   
+    55%{transform:translateX(200px);}
+    100%{transform:translateX(0px);}   
 }  
 
 /* fin animation slogan */
@@ -259,7 +259,6 @@ h1{
 
 .principale{
     margin: 10px;
-    columns: 500px;
 }
 
  /* pencarte bienvenue */
@@ -272,6 +271,7 @@ h1{
     background: #ecc899;
     /* que pour chrome et safari */
     background: linear-gradient(to right, #eba640 0%, #f80000 100%);
+    background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font: italic normal bold 2rem 'Satisfy';
@@ -548,4 +548,19 @@ footer{
         columns: 2;
     }
 
+    .try{
+        display: grid;
+    }
+
+    .friseImages{
+        order: 3;
+    }
+
+    .try h3{
+        order: 1;
+    }
+
+    .try p{
+        order: 2;
+    }
 }
