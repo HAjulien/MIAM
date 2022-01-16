@@ -2,6 +2,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Sanchez&family=Satisfy&display=swap');
 
+*::before,*::after{
+    box-sizing: border-box;
+}
+
+
 *{
     margin: 0px;
     padding: 0px;
@@ -259,6 +264,7 @@ h1{
 
 .principale{
     margin: 10px;
+    
 }
 
  /* pencarte bienvenue */
@@ -316,7 +322,7 @@ h3{
 
 .friseImages{
     display: flex;
-    margin: 20px -10px ;
+    margin: 20px 0px ;
      /*Pour remplir les marges des images */
     background-color: #684033;
     border-bottom: 5px solid #684033;
@@ -329,7 +335,7 @@ h3{
 }
 
 .friseImages img{
-    width: clamp(100px,45vw,230px);
+    width: clamp(100px,43vw,230px);
     /* aimanté aux milieu des images */
     scroll-snap-align: center;
 }
@@ -380,6 +386,7 @@ figcaption{
 
 #menu{
     position: sticky;
+    margin-top: 10%;
     bottom: 0%;
     width: 90vw;
     left: 5vw;
@@ -535,9 +542,9 @@ footer{
     background-color: #534F56;
 }
 
-/* media queries pc */
-@media screen and (min-width:766px) {
+/* media queries pour tout au dessus du portable */
 
+@media screen and (min-width:766px){
     .container{
         display: none;
     }
@@ -545,22 +552,46 @@ footer{
         display: none;
     }
     .principale{
-        columns: 2;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: baseline;
+    }
+
+    #bienvenue{
+        width: 100%;
+        margin: 0px 30%;
+    }
+}
+
+/* pour tablette */
+@media screen and (min-width:766px) and (max-width:1024px) {
+
+    article{
+        width: 50%;
+    }
+    /* on selection le paragraphe du 1er article (seul qui suit h3) */
+    h3+p{
+        margin-right: 10px;
     }
 
     .try{
-        display: grid;
-    }
-
-    .friseImages{
+        width: 100%;
         order: 3;
     }
 
-    .try h3{
-        order: 1;
+}
+
+/* pour desktop */
+@media screen and (min-width:1025px) {
+
+    article{
+        width: 32%;
     }
 
-    .try p{
-        order: 2;
+    .try{
+        margin: 2%;
+
     }
+
 }
