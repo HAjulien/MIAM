@@ -28,12 +28,12 @@ body{
     color: #131212;    
 }
 
-p{
+h3 ~ p{
     text-indent: 35px;
     line-height: 31px;
 }
 
-p::first-letter{
+h3 ~ p::first-letter{
     font-size: 1.3rem;
     color: #dd1066;
 }
@@ -45,6 +45,11 @@ p::first-letter{
 }
 
 /* début header */
+
+.headerDesktop, .heroBanner{
+    display: none;
+}
+
 
 header{
     background-image: linear-gradient(to left top, #cda673, #d6b589, #dec4a0, #e7d3b7, #efe2cf);
@@ -545,12 +550,15 @@ footer{
 /* media queries pour tout au dessus du portable */
 
 @media screen and (min-width:766px){
+
     .container{
         display: none;
     }
     .tapbar{
         display: none;
     }
+
+
     .principale{
         display: flex;
         flex-wrap: wrap;
