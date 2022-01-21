@@ -1,4 +1,4 @@
- /* applique sur toute la page */
+ /* applique sur toute la page reset */
 
 @import url('https://fonts.googleapis.com/css2?family=Sanchez&family=Satisfy&display=swap');
 
@@ -32,15 +32,6 @@ body{
     color: #131212;    
 }
 
-h3 ~ p{
-    text-indent: 35px;
-    line-height: 31px;
-}
-
-h3 ~ p::first-letter{
-    font-size: 1.3rem;
-    color: #dd1066;
-}
 
 /* quand on selectionne un morceau texte */
 ::selection{
@@ -320,6 +311,16 @@ h3{
     text-decoration: underline;
 }
 
+h3 ~ p{
+  text-indent: 35px;
+  line-height: 31px;
+}
+
+h3 ~ p::first-letter{
+  font-size: 1.3rem;
+  color: #dd1066;
+}
+
 .fork{
     float: left; 
     padding-top: 7px;
@@ -513,7 +514,7 @@ figcaption{
 }
 
 /* fin menu burger */
-/* footer */
+/* footer mobile */
 
 footer{
     background-color: #534F56;
@@ -621,8 +622,7 @@ footer{
           animation: firstappear 4s;
 }
 
-
-/* texte dans grande image */
+/* conteneur des textes dans image */
 .insideBigImage {
   position: absolute;
   top: 65%;
@@ -630,10 +630,11 @@ footer{
   height: 100vh;
   width: 100vw;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   text-align: center;
   color: white;
 }
+/* texte dans la grande image */
 
 .insideBigImage h1 {
   margin-bottom: 40vh;
@@ -654,6 +655,7 @@ footer{
   text-shadow: 1.5px 0 0 #534F56, 1.5px 1.5px 0 #534F56, 0 1.5px 0 #534F56, -1.5px 1.5px 0 #534F56, -1.5px 0 0 #534F56, -1.5px -1.5px 0 #534F56, 0 -1.5px 0 #534F56, 1.5px -1.5px 0 #534F56;
 }
 
+/* debut du menu fixe en hau */
 .headerDesktop {
   position: fixed;
   top: 0;
@@ -719,6 +721,7 @@ footer{
   transition: all .3s ease-in-out;
 }
 
+/* animation titre qui se rempli */
 @-webkit-keyframes showup {
   0% {
     color: transparent;
@@ -743,6 +746,7 @@ footer{
   }
 }
 
+  /* animation image qui se succede */
 @-webkit-keyframes firstappear {
   0% {
     -webkit-transform: scale(1);
@@ -851,7 +855,7 @@ footer{
   }
 }
 
-
+/* on enleve tapbar le diaporama mobile et le header mobile */
     .headerMobile{
       display: none;
     }
@@ -871,7 +875,7 @@ footer{
         justify-content: center;
         align-items: baseline;
     }
-
+/* on reduit cadre de la pencarte bienvenue */
     #bienvenue{
         width: 100%;
         margin: 0px 30%;
@@ -884,7 +888,7 @@ footer{
     article{
         width: 50%;
     }
-    /* on selection le paragraphe du 1er article (seul ceux qui suit h3) */
+    /* on selectionne le paragraphe du 1er article (seul ceux qui suit h3) */
     h3+p{
         margin-right: 10px;
     }
