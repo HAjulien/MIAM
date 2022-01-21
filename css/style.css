@@ -936,11 +936,16 @@ footer{
     }
 /* grande cases */
     .menuLien:nth-child(even){
-        width: 15vw;
+        width: 12vw;
     }
 
     .principale article{
       margin-top: 10vh;
+      max-height: 500px;
+    }
+    
+    .principale article::before{
+      height: 580px;
     }
 
 
