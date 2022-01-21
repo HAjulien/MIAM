@@ -897,11 +897,19 @@ footer{
         width: 100%;
         order: 3;
     }
-/* on augmente taille case du menu */
+/* on change les tailles des case du menu */
     .menuLien {
       display: inline-block;
-      width: 13vw;
     }
+/* petites case accueil cafe equipe contact */
+    .menuLien:nth-child(odd){
+        width: 10vw;
+    }
+/* grande cases */
+    .menuLien:nth-child(even){
+        width: 15vw;
+    }
+
 }
 
 /* pour desktop */
