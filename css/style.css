@@ -561,9 +561,39 @@ footer{
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
 
 /* unset pour faire reapparaître les éléments */
+
 #pageDesktop {
   all: unset;
 }
+body{
+  overflow-x: hidden;
+}
+
+/* personnalise bar */
+body::-webkit-scrollbar{
+  all: unset;
+  width: 17px;
+}
+
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #cda673 #bdb1ac80;
+}
+
+/* Works on Chrome, Edge, and Safari */
+
+
+*::-webkit-scrollbar-track {
+  background-color: #bdb1ac80;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #cda673;
+  border-radius: 20px;
+  border: 3px solid #eb7311;
+}
+
 
 .heroBanner {
   position: relative;
@@ -657,11 +687,11 @@ footer{
   text-shadow: 1.5px 0 0 #534F56, 1.5px 1.5px 0 #534F56, 0 1.5px 0 #534F56, -1.5px 1.5px 0 #534F56, -1.5px 0 0 #534F56, -1.5px -1.5px 0 #534F56, 0 -1.5px 0 #534F56, 1.5px -1.5px 0 #534F56;
 }
 
-/* debut du menu fixe en hau */
+/* debut du menu fixe en haut */
 .headerDesktop {
   position: fixed;
   top: 0;
-  height: 5%;
+  height: 37px;
   width: 100%;
   color: #f8f8f8;
   text-transform: lowercase;
@@ -873,12 +903,6 @@ footer{
   opacity: 0;
 }
 
-.principale article:hover:before, .principale article:hover:after{
-  opacity: 1;
-  transition: all .4s ease-in-out;
-}
-
-
 /* on enleve tapbar le diaporama mobile et le header mobile */
     .headerMobile{
       display: none;
@@ -912,11 +936,19 @@ footer{
 
     article{
         width: 45%;
-        margin-bottom: 3vh;
-        padding:0 14px;
+        margin-bottom: 1vh;
+        padding:0 10px;
+
     }
     /* on selectionne le paragraphe du 1er article (seul ceux qui suit h3) */
-
+/* pour aligne les paragraphe */
+    .paraOne{
+      display: block;
+      margin-top: 83px;
+      height: 60vh;
+      width: 75%;
+      padding-left: 45px;
+    }
     
     .para3{
       margin-left: 15px;
@@ -927,9 +959,6 @@ footer{
         order: 3;
     }
 /* on change les tailles des case du menu */
-    .menuLien {
-      display: inline-block;
-    }
 /* petites case accueil cafe equipe contact */
     .menuLien:nth-child(odd){
         width: 10vw;
@@ -938,17 +967,35 @@ footer{
     .menuLien:nth-child(even){
         width: 15vw;
     }
-
+/* on aere la page */
     .principale article{
       margin-top: 10vh;
       max-height: 500px;
     }
-    
+    /* cadre ne rentre pas sur le 3eme paragraphe */
     .principale article::before{
       height: 580px;
     }
 
+    .principale h2+article::before{
+    top: 5%;
+    right: 0;
+    opacity: 1;
+    }
 
+
+    
+
+}
+
+@media screen and (min-width:1025px) and (max-width:1056px) {
+/* pour aligner les paragraphes */
+      .paraOne{
+        padding-top: 30px;
+      }
+      .try h3{
+        margin-bottom: 82px;
+      }
 }
 
 /* pour desktop */
@@ -965,4 +1012,19 @@ footer{
 
     }
 
+    /* aligner les paragraphes */
+
+    .paraOne{
+      margin-top: 77px;
+    }
+
+    .para3{
+      margin-top: -6px;
+    }
+
+
+    .principale article:hover:before, .principale article:hover:after{
+      opacity: 1;
+      transition: all .4s ease-in-out;
+    }
 }
