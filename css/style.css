@@ -936,7 +936,7 @@ body::-webkit-scrollbar{
   right: -3%;
   bottom: 0%;
   left: -3%;
-  height: 650px;
+  height: 700px;
   z-index: -3;
   border-radius: 15px;
   background-color:rgba(255, 255, 255, 0.4);
