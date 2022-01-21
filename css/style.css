@@ -46,12 +46,12 @@ h3 ~ p::first-letter{
 
 /* début header */
 
-.headerDesktop, .heroBanner{
+#pageDesktop{
     display: none;
 }
 
 
-header{
+.headerMobile{
     background-image: linear-gradient(to left top, #cda673, #d6b589, #dec4a0, #e7d3b7, #efe2cf);
     border-bottom: 2px solid #534F56;
     display: flex;
