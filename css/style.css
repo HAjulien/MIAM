@@ -127,7 +127,7 @@ a img{
     z-index: 1;
 }
 
-h1{
+#titre1{
     position: absolute;
     display: flex;
     align-items: center;
