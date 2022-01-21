@@ -936,7 +936,7 @@ footer{
     }
 /* grande cases */
     .menuLien:nth-child(even){
-        width: 12vw;
+        width: 15vw;
     }
 
     .principale article{
