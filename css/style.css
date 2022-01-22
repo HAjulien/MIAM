@@ -618,7 +618,7 @@ footer{
 
 @media screen and (min-width:766px){
 
-/* style titre roboto du titre grande page accueil  */
+/* font family roboto pour le titre grande page accueil  */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
 
 /* unset pour faire reapparaître les éléments */
@@ -630,7 +630,7 @@ body{
   overflow-x: hidden;
 }
 
-/* personnalise bar de défilement page */
+/* personnalise bar de défilement page et rend futurproof*/
 body::-webkit-scrollbar{
   all: unset;
   width: 17px;
@@ -655,7 +655,7 @@ body::-webkit-scrollbar{
   border: 4px solid #a9c0a6;
 }
 
-
+/* debut page1 grande image accueil */
 .heroBanner {
   position: relative;
   height: 100vh;
@@ -669,7 +669,7 @@ body::-webkit-scrollbar{
   overflow-y: scroll;
   overflow-x: hidden;
 }
-
+/* les 3 div bigImage qui contiennent chacune 1 image en background */
 .bigImage {
   position: absolute;
   height: 150vh;
@@ -1001,7 +1001,7 @@ body::-webkit-scrollbar{
         padding:0 10px;
 
     }
-    /* on selectionne le paragraphe du 1er article (seul ceux qui suit h3) */
+    /* on selectionne le paragraphe du 1er article */
 /* pour aligne les paragraphe */
     .paraOne{
       display: block;
@@ -1020,7 +1020,7 @@ body::-webkit-scrollbar{
         order: 3;
     }
 /* on change les tailles des case du menu */
-/* petites case accueil cafe equipe contact */
+/* petites case pour accueil cafe equipe contact */
     .menuLien:nth-child(odd){
         width: 10vw;
     }
@@ -1043,10 +1043,6 @@ body::-webkit-scrollbar{
     right: 0;
     opacity: 1;
     }
-
-
-    
-
 }
 
 @media screen and (min-width:1025px) and (max-width:1056px) {
