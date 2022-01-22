@@ -1062,8 +1062,7 @@ body::-webkit-scrollbar{
     .para3{
       margin-top: -6px;
     }
-
-
+    /* cadre qui apparait sur paragraphe */
     .principale article:hover:before, .principale article:hover:after{
       opacity: 1;
       transition: all .4s ease-in-out;
