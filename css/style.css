@@ -338,13 +338,22 @@ p strong{
   position: relative;
 }
 
+/* pour montrer que l'on peut se renseigner sur sigle afpa */
 p [title]::after{
     content: "?";
-    font-size: .7rem;
+    display: inline-block;
+    position: absolute;
+    bottom: 30%;
+    left: 80%;
+    text-indent: 0px;
+    font-size: .9rem;
+    font-weight: bolder;
     color: #097770;
+    transition: all .4s ease-in-out;
+
 }
 
-
+/* bulle information qui apparait lors d'un hover */
 p [title]::before{
   position: absolute;
   display: flex;
@@ -362,11 +371,17 @@ p [title]::before{
   color: #FFFFFF;
   border-radius: 10px;
   opacity: 0;
+  transition: all .4s ease-in-out;
 }
 
 p [title]:hover::before{
   opacity: 1;
-  transition: all .5s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+p [title]:hover:after{
+  opacity: 0;
+  transition: all .4s ease-in-out;
 }
 
 .fork{
@@ -603,7 +618,7 @@ footer{
 
 @media screen and (min-width:766px){
 
-/* style titre roboto  */
+/* style titre roboto du titre grande page accueil  */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
 
 /* unset pour faire reapparaître les éléments */
@@ -615,7 +630,7 @@ body{
   overflow-x: hidden;
 }
 
-/* personnalise bar */
+/* personnalise bar de défilement page */
 body::-webkit-scrollbar{
   all: unset;
   width: 17px;
@@ -741,7 +756,7 @@ body::-webkit-scrollbar{
   width: 100%;
   color: #f8f8f8;
   text-transform: lowercase;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.7);
   z-index: 2;
 }
 
@@ -790,7 +805,7 @@ body::-webkit-scrollbar{
   -webkit-transform: scale(0);
           transform: scale(0);
 }
-/* barre qui apparait lors hover */
+/* barre qui apparait sous menu lors d'un hover */
 
 .menuLien:hover::after {
   -webkit-transform: scale(0.8);
@@ -824,7 +839,7 @@ body::-webkit-scrollbar{
   }
 }
 
-  /* animation image qui se succede */
+  /* animation image accueil qui se succede */
 @-webkit-keyframes firstappear {
   0% {
     -webkit-transform: scale(1);
@@ -933,7 +948,7 @@ body::-webkit-scrollbar{
   }
 }
 
-/* pour bien se concentrer sur le paragraphe */
+/* pour bien se concentrer sur le paragraphe, on crée un cadre */
 .principale article::before{
   content: "";
   position: absolute;
@@ -1009,7 +1024,7 @@ body::-webkit-scrollbar{
     .menuLien:nth-child(odd){
         width: 10vw;
     }
-/* grande cases */
+/* grande cases pour les autres */
     .menuLien:nth-child(even){
         width: 15vw;
     }
