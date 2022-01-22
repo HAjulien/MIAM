@@ -234,8 +234,8 @@ a img{
 }
 
 #i3:checked ~ .insidePhoto #dot3{
-    background-color: #2add195e;
-    border:4px solid #17770e;
+    background-color: #17f3e425;
+    border:4px solid #097770;
 }
 
 /* fin des éléments à l'intérieux du diaporama */
@@ -330,22 +330,27 @@ p strong{
   color: #dd1066;
   font-size: 1.2rem;
 }
-.paraOne{
+
+/* bulle information sur abbr afpa */
+
+/* on crée le span bubble pour bien positionner before */
+#bubble{
   position: relative;
 }
 
 p [title]::after{
     content: "?";
-    font-size: .6rem;
+    font-size: .7rem;
+    color: #097770;
 }
 
 
 p [title]::before{
   position: absolute;
-  display: inline-block;
+  display: flex;
   content: "Agence nationale pour la Formation Professionnelle des Adultes";
-  bottom: 100%;
-  left: 50%;
+  bottom: 110%;
+  right: -100%;
   width: 180px;
   height: 55px;
   padding: 5px;
