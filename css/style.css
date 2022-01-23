@@ -1109,7 +1109,7 @@ footer{
       all: unset;
       display: grid;
       height: 90vh;
-      width: 80vw;
+      width: 90vw;
       margin-top: 15vh;
       grid-template-columns: 1fr, 1fr, 1fr, 1fr, 1fr, 1fr;
       grid-template-rows: 1fr, 1fr, 1fr, 1fr, 1fr, 1fr;
