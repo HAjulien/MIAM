@@ -1086,7 +1086,7 @@ body::-webkit-scrollbar{
   }
 }
 
-/* pour bien se concentrer sur le paragraphe, on crée un cadre quad souris passe dessus */
+/* pour bien se concentrer sur le paragraphe, on crée un cadre quand la souris passe dessus */
 .principale article::before{
   content: "";
   position: absolute;
@@ -1102,7 +1102,7 @@ body::-webkit-scrollbar{
   opacity: 0;
 }
 
-/* on refait gallerie d'image */
+/* on refait gallerie d'image en grille*/
   .gallerieImage{
       all: unset;
       display: grid;
@@ -1123,7 +1123,7 @@ body::-webkit-scrollbar{
       grid-gap: 3px;
       border-radius: 20px;
   }
-
+/* on aere la grille d'image */
   .gallery1{
       margin: 1% 9%;
   }
