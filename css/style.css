@@ -1106,7 +1106,7 @@ body::-webkit-scrollbar{
   .gallerieImage{
       all: unset;
       display: grid;
-      height: 80vh;
+      height: 90vh;
       width: 80vw;
       padding: 1em;
       order: 3;
@@ -1132,9 +1132,6 @@ body::-webkit-scrollbar{
       margin: 2% 4% 3% 5%;
   }
 
-  .gallery4 P{
-    font-size: 2rem;
-  }
   .gallery5{
       margin-left: 4%;
       background-position: right;
@@ -1145,7 +1142,7 @@ body::-webkit-scrollbar{
   }
 
   .gallery7{
-    margin-bottom: 3%;
+    margin:-3% 0 3% 0;
   }
 
 }
@@ -1176,7 +1173,6 @@ body::-webkit-scrollbar{
         margin: 5% 35% -10% 35%;
     }
 
-}
 
 /* pour tablette */
 @media screen and (min-width:766px) and (max-width:1024px) {
