@@ -535,7 +535,6 @@ figcaption{
   "gallery7";  
   grid-gap: 12px;
   overflow: hidden;
-
 }
 
 .grid{
@@ -561,6 +560,7 @@ figcaption{
 .gallery3{
   grid-area: gallery3;
   background:#84ffff;  
+  
 }
 
 .gallery4{
@@ -1138,6 +1138,7 @@ footer{
           "gallery2 gallery2 gallery3 gallery3 gallery7 gallery7"
           "gallery2 gallery2 gallery3 gallery3 gallery7 gallery7";
       grid-gap: 3px;
+      order: 3;
 
 
     }
