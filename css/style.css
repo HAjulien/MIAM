@@ -1103,7 +1103,6 @@ body::-webkit-scrollbar{
 }
 
 /* on refait gallerie d'image */
-@media only screen and (min-width: 767px) {
   .gallerieImage{
       all: unset;
       display: grid;
