@@ -458,7 +458,6 @@ figcaption{
   flex-direction: column;
   margin: 1em 0;
   text-align: center;
-  font-weight: bold;
   text-indent: 0;
   width: 100%;
 }
@@ -471,14 +470,12 @@ figcaption{
   margin: .5em auto;
   height: 50px;
   width: 150px;
-  color: #0e0d0d;
-  font-weight: normal;
   border: 4px solid #097770a4;
-  border-radius: 15px;
-  box-shadow: 3px 3px 3px 0px ;
   /* pour arrondir rectangle a interieux du bouton */
   overflow: hidden;
-
+  border-radius: 15px;
+  box-shadow: 3px 3px 3px 0px ;
+  color: #0e0d0d;
 }
 
 .CTA a::before{
@@ -493,7 +490,7 @@ figcaption{
   transition: all .3s linear;
 }
 
-.CTA a:hover:before{
+.CTA:hover a::before{
   clip-path: circle(130% at 90% 50%);
   transition: all .3s linear;
 }
@@ -502,7 +499,7 @@ figcaption{
   background: #534F56;
 }
 
-.buttomEquipe a:hover{
+.buttomEquipe:hover a{
   color: #cda673;
   transition: all .2s linear;
 }
@@ -511,7 +508,7 @@ figcaption{
   background-color: #dd1066;
 }
 
-.buttomCommand a:hover , .buttomMenu a:hover{
+.buttomCommand :hover , .buttomMenu :hover{
   color: #f8f8f8;
   transition: all .2s linear;
   box-shadow: 3px 3px 3px 0px black;
@@ -1094,7 +1091,7 @@ body::-webkit-scrollbar{
   right: -3%;
   bottom: 0%;
   left: -3%;
-  height: 850px;
+  height: 700px;
   z-index: -3;
   border-radius: 15px;
   background-color:rgba(255, 255, 255, 0.4);
