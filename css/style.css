@@ -987,7 +987,7 @@ body::-webkit-scrollbar{
 /* on reduit cadre de la pencarte bienvenue */
     #bienvenue{
         width: 100%;
-        margin: 0px 30%;
+        margin: 5% 35% -10% 35%;
     }
 
 }
