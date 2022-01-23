@@ -407,7 +407,7 @@ p [title]:hover:after{
 }
 
 .friseImages img{
-    width: clamp(100px,43vw,230px);
+    width: clamp(100px,43vw,240px);
     /* aimanté aux milieu des images */
     scroll-snap-align: center;
 }
@@ -527,11 +527,11 @@ figcaption{
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
   grid-template-areas:
   "gallery4"
-  "gallery3"
   "gallery1"
-  "gallery2"
-  "gallery5"
+  "gallery3"
   "gallery6"  
+  "gallery5"
+  "gallery2"
   "gallery7";  
   grid-gap: 12px;
   overflow: hidden;
@@ -547,7 +547,7 @@ figcaption{
 
 .gallery1{
   grid-area: gallery1;
-  background-image: url(/images/accueil1.jpg);
+  background-image: url(/images/festive.jpg);
   
 }
 
@@ -559,7 +559,7 @@ figcaption{
 
 .gallery3{
   grid-area: gallery3;
-  background:#84ffff;    
+  background-image: url(/images/clickCollect/Carpaccio.jpg);
 }
 
 .gallery4{
@@ -574,19 +574,19 @@ figcaption{
 
 .gallery5{
   grid-area: gallery5;
-  background-image: url(/images//accueil2.jpg);
+  background-image: url(/images//pizza.jpg);
   background-position: right;
   
 }
 
 .gallery6{
   grid-area: gallery6;
-  background-image: url(/images/accueil3.jpg);
+  background-image: url(/images/burgers.jpg);
   
 }
 .gallery7{
   grid-area: gallery7;
-  background-image: url(/images/clickCollect/Carpaccio.jpg);
+  background-image: url(/images/cuisine.jpg);
 }
 
 /* fin de la page 2 */
@@ -1126,21 +1126,31 @@ footer{
 
     }
 
-    /* on aere la grille */
+    /* on aere la grille et on change les images*/
     .gallery1{
       margin: 1% 12%;
+      background-image: url(/images/accueil1.jpg);
     }
 
     .gallery2{
       margin: 2% 3% 3% 3%;
     }
 
+    .gallery3{
+      margin: 5%;
+      background-image: url(/images/accueil3.jpg);
+      background-position: right;
+    }
+    
     .gallery5{
       margin-left: 4%;
+      background-image: url(/images/accueil2.jpg);
+      
     }
-
+    
     .gallery6{
-      margin: 9%;
+      background-image: url(/images/clickCollect/Carpaccio.jpg);
+      margin: 5% 15%;
     }
 
 /* on enleve tapbar le diaporama mobile et le header mobile */
