@@ -1102,7 +1102,7 @@ body::-webkit-scrollbar{
   opacity: 0;
 }
 
-/* on refait gallerie d'image en grille*/
+/* on refait gallerie d'image en grille de 6x6 cases egales*/
   .gallerieImage{
       all: unset;
       display: grid;
@@ -1122,6 +1122,7 @@ body::-webkit-scrollbar{
           "gallery2 gallery2 gallery3 gallery3 gallery7 gallery7";
       grid-gap: 3px;
       border-radius: 20px;
+      
   }
 /* on aere la grille d'image */
   .gallery1{
