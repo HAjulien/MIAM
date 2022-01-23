@@ -698,19 +698,19 @@ body::-webkit-scrollbar{
 
 /* images de fond qui vont se succéder  */
 #un {
-  background-image: url(../burgers.jpg);
+  background-image: url(../images/burgers.jpg);
   -webkit-animation: thirdappear 3s 7s;
           animation: thirdappear 3s 7s;
 }
 
 #deux {
-  background-image: url(../pizza.jpg);
+  background-image: url(../images/pizza.jpg);
   -webkit-animation: Secondappear 3s 4s;
           animation: Secondappear 3s 4s;
 }
 
 #trois {
-  background-image: url(../festive.jpg);
+  background-image: url(../images/festive.jpg);
   -webkit-animation: firstappear 4s;
           animation: firstappear 4s;
 }
@@ -745,6 +745,7 @@ body::-webkit-scrollbar{
 .insideBigImage p {
   font-size: 1.5rem;
   margin: 0 30%;
+  /* contour lettre en couleur */
   text-shadow: 1.5px 0 0 #534F56, 1.5px 1.5px 0 #534F56, 0 1.5px 0 #534F56, -1.5px 1.5px 0 #534F56, -1.5px 0 0 #534F56, -1.5px -1.5px 0 #534F56, 0 -1.5px 0 #534F56, 1.5px -1.5px 0 #534F56;
 }
 
@@ -1020,7 +1021,7 @@ body::-webkit-scrollbar{
         order: 3;
     }
 /* on change les tailles des case du menu */
-/* petites case pour accueil cafe equipe contact */
+/* petites case pour accueil/cafe/equipe/contact */
     .menuLien:nth-child(odd){
         width: 10vw;
     }
@@ -1033,7 +1034,7 @@ body::-webkit-scrollbar{
       margin-top: 10vh;
       max-height: 500px;
     }
-    /* cadre ne rentre pas sur le 3eme paragraphe */
+    /* pour que le cadre ne rentre pas sur le 3eme paragraphe */
     .principale article::before{
       height: 580px;
     }
