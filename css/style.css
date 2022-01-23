@@ -450,6 +450,66 @@ figcaption{
     width: 135px;
     /* pour que les bords intérieux photo soit aussi arrondi */
     border-radius: 0px 10px 10px 0px ;
+}
+
+/* button lien */
+.CTA{
+  display: flex;
+  flex-direction: column;
+  margin: 1em 0;
+  text-align: center;
+  text-indent: 0;
+  width: 100%;
+}
+
+.CTA a{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: .5em auto;
+  height: 50px;
+  width: 150px;
+  border: 4px solid #097770;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px 0px ;
+  color: #0e0d0d;
+}
+
+.CTA a::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  clip-path: circle(40% at 100% 50%);
+  z-index: -1;
+  transition: all .3s linear;
+}
+
+.CTA:hover a::before{
+  clip-path: circle(130% at 90% 50%);
+  transition: all .3s linear;
+}
+
+.buttomEquipe a::before{
+  background: #534F56;
+}
+
+.buttomEquipe:hover a{
+  color: #cda673;
+  transition: all .2s linear;
+}
+
+.buttomCommand a::before , .buttomMenu a::before{
+  background-color: #dd1066;
+}
+
+.buttomCommand :hover , .buttomMenu :hover{
+  color: #f8f8f8;
+  transition: all .2s linear;
+  box-shadow: 3px 3px 3px 0px black;
 
 }
 
@@ -998,7 +1058,7 @@ body::-webkit-scrollbar{
 
     article{
         width: 45%;
-        margin-bottom: 1vh;
+        margin-bottom: 15vh;
         padding:0 10px;
 
     }
@@ -1007,7 +1067,6 @@ body::-webkit-scrollbar{
     .paraOne{
       display: block;
       margin-top: 93px;
-      height: 60vh;
       width: 75%;
       padding-left: 45px;
     }
@@ -1036,7 +1095,7 @@ body::-webkit-scrollbar{
     }
     /* pour que le cadre ne rentre pas sur le 3eme paragraphe */
     .principale article::before{
-      height: 580px;
+      height: 700px;
     }
 
     .principale h2+article::before{
