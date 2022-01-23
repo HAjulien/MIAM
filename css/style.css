@@ -518,7 +518,7 @@ figcaption{
 
 }
 
-/* on cree la galerie image */
+/* on cree la galerie image en grid */
 .gallerieImage{
   box-sizing: border-box;
   display: grid;
@@ -559,8 +559,7 @@ figcaption{
 
 .gallery3{
   grid-area: gallery3;
-  background:#84ffff;  
-  
+  background:#84ffff;    
 }
 
 .gallery4{
