@@ -1121,10 +1121,12 @@ footer{
           "gallery2 gallery2 gallery3 gallery3 gallery7 gallery7"
           "gallery2 gallery2 gallery3 gallery3 gallery7 gallery7";
       grid-gap: 3px;
+  /* on place a la fin */
       order: 3;
 
     }
 
+    /* on aere la grille */
     .gallery1{
       margin: 1% 12%;
     }
