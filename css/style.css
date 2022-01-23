@@ -523,7 +523,8 @@ figcaption{
 /* Début gallerie image */
 .gallerieImage{
   display: grid;
-  height: 210vh;
+  height: 150vh;
+  width: 100vw;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
   grid-template-areas:
@@ -535,7 +536,6 @@ figcaption{
   "gallery6"  
   "gallery7";  
   grid-gap: 12px;
-  overflow: hidden;
 
 }
 
