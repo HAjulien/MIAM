@@ -1182,7 +1182,7 @@ footer{
 }
 
 /* pour tablette */
-@media screen and (min-width:766px) and (max-width:1024px) {
+@media screen and (min-width:766px) and (max-width:1024px) and (orientation:landscape) {
 
     article{
         width: 45%;
