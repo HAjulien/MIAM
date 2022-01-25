@@ -336,6 +336,7 @@ p strong{
 /* on crée le span bubble pour bien positionner before */
 #bubble{
   position: relative;
+  cursor: help;
 }
 
 /* pour montrer que l'on peut se renseigner sur sigle afpa */
