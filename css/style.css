@@ -478,6 +478,7 @@ figcaption{
   box-shadow: 3px 3px 3px 0px ;
   /* pour arrondir rectangle a interieux du bouton */
   overflow: hidden;
+  transition: all .2s linear;
 
 }
 
@@ -505,6 +506,8 @@ figcaption{
 .buttomEquipe a:hover{
   color: #cda673;
   transition: all .2s linear;
+  box-shadow: 0px 0px 0px 0px black;
+  transform: scale(.95);
 }
 
 .buttomCommand a::before , .buttomMenu a::before{
@@ -514,7 +517,8 @@ figcaption{
 .buttomCommand a:hover , .buttomMenu a:hover{
   color: #f8f8f8;
   transition: all .2s linear;
-  box-shadow: 3px 3px 3px 0px black;
+  box-shadow: 0px 0px 0px 0px black;
+  transform: scale(.95);
 
 }
 
@@ -1150,7 +1154,7 @@ footer{
     
     .gallery6{
       background-image: url(/images/clickCollect/Carpaccio.jpg);
-      margin: 5% 15%;
+      margin: 25% 5%;
     }
 
 /* on enleve tapbar le diaporama mobile et le header mobile */
@@ -1182,7 +1186,7 @@ footer{
 }
 
 /* pour tablette */
-@media screen and (min-width:766px) and (max-width:1024px) {
+@media screen and (min-width:766px) and (max-width:1024px) and (orientation:landscape) {
 
     article{
         width: 45%;
