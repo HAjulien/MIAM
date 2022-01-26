@@ -594,6 +594,11 @@ figcaption{
   background-image: url(/images/cuisine.jpg);
 }
 
+
+#video{
+  margin-top: 10vh;
+  order: 10;
+}
 /* fin de la page 2 */
 /* menu tapbar */   
 
@@ -1117,6 +1122,7 @@ footer{
       display: grid;
       height: 90vh;
       width: 90vw;
+      padding: 5%;
       margin-top: 15vh;
       grid-template-columns: 1fr, 1fr, 1fr, 1fr, 1fr, 1fr;
       grid-template-rows: 1fr, 1fr, 1fr, 1fr, 1fr, 1fr;
@@ -1214,6 +1220,7 @@ footer{
         width: 100%;
         order: 3;
     }
+
 /* on change les tailles des case du menu */
 /* petites case pour accueil/cafe/equipe/contact */
     .menuLien:nth-child(odd){
