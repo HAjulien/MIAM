@@ -596,9 +596,14 @@ figcaption{
 
 
 #video{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 10vh;
   order: 10;
+
 }
+
 /* fin de la page 2 */
 /* menu tapbar */   
 
